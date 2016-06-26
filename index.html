@@ -1,0 +1,230 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, 
+                                       maximum-scale=1.0, user-scalable=no">
+
+		<title></title>
+        
+        <meta name="description" content="Development and application of a framework for model structure evaluation in environmental modelling" />
+        <meta name="author" content="Stijn Van Hoey" />
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/defense.css" id="theme"/>
+		<link rel="stylesheet" href="css/phd.css" />
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<script type="text/x-mathjax-config">
+			MathJax.Hub.Config({
+				tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+			});
+		</script>
+		<script type="text/javascript" src="MathJax/MathJax.js?config=TeX-AMS_HTML-full">
+		</script>
+
+	</head>
+	<body>
+		<!-- http://pagesperso.g-scop.grenoble-inp.fr/~shahwana/phd/defense/# -->
+		<div class="reveal">
+            <div class="topleft" id="chapter-name">	</div> 
+			<div class="bottomright" id="slide-progress"> </div>
+            
+			<div class="slides">
+	    <!-- ############## -->
+            <!-- INTRODUCTION -->
+            <!-- ############## -->
+            <section> <!-- data-background-image="figs/introduction/background1.jpg" -->
+                <h1>Development and application of a framework for model structure evaluation in environmental modelling</h1>
+                <div class="altpanel" style="height: 430px">
+                    <div class="alternative fragment spin-out" data-fragment-index="10" >
+                            <h2 class="name">Stijn Van Hoey</h2>
+                            <p>
+                                <small>Supervised by</small>
+                                <h3 class="name">Piet Seuntjens</h3><h3 class="name">Ingmar Nopens</h3>
+                            </p>
+                            <div>
+                                <img width="300" src="figs/logos/VITO.png" alt="VITOP" class="logo" />
+                                <img width="300" src="figs/logos/biomath_ugentblue.png" alt="Biomath ugent" class="logo" />
+                            </div>
+                            <div style="margin-top: .5em; font-size: .75em; line-height: 1">
+                                Gent<br/>
+                                1 July, 2016
+                            </div>
+                    </div>
+                    <div class="alternative fragment spin-in" data-fragment-index="10">
+                        <p>
+                            <small>a collaboration between</small><br />
+                            <img width="200" src="figs/logos/VITO.png" alt="VITO" class="logo" />
+                            <h4 style="margin-bottom: 0">Flemish institute <br /> for Technological Research</h4>
+                            <small><code>https://vito.be</code></small>									
+                        </p><p>
+                            <small>and </small><br />
+                            <img width="200" src="figs/logos/biomath_ugentblue.png" alt="BIOMATH" class="logo" />
+                            <h4 style="margin-bottom: 0">Department of Mathematical Modelling, <br />Statistics and Bioinformatics</h4>
+                            <small><code>http://biomath.ugent.be/</code></small>
+                        </p>
+                    </div>                    
+                </div>                                        
+            </section>
+
+                <!-- https://staddamme.wordpress.com/wateroverlast/ wateroverlast1 -->
+                <!-- https://jmeblommaert.files.wordpress.com/2014/02/china-smog11.jpg luchtvervuiling1 -->
+                <!-- http://www.dvhn.nl/archief/Water-oude-zandafgraving-Grote-Moere-weer-gezond-20778139.html watervervuiling1 -->
+
+            <section data-background="figs/introduction/wateroverlast1.jpg">
+		<h2 style="color:white;text-align: left;">Floods</h2>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <div class="footnote"><a href="https://staddamme.wordpress.com/wateroverlast/">
+                    Source: https://staddamme.wordpress.com/wateroverlast/</a></div>                  
+            </section>
+            <section data-background="figs/introduction/watervervuiling1.jpg">
+		<h1>Water pollution</h1>
+                <div class="footnote"><a href="http://www.dvhn.nl/archief/Water-oude-zandafgraving-Grote-Moere-weer-gezond-20778139.html">
+                    Source: http://www.dvhn.nl/archief/Water-oude-zandafgraving-Grote-Moere-weer-gezond-20778139.html</a></div>  
+            </section>
+            <section data-background="figs/introduction/luchtvervuiling1.jpg"> 
+                <h2>Air pollution</h2>
+                <div class="footnote" style="position: fixed; height: 2vh; padding-top: 0.5vh; padding-bottom: 0.5vh; z-index: 20;">
+			         <a href="https://jmeblommaert.files.wordpress.com/2014/02/china-smog11.jpg">
+                    Source: https://jmeblommaert.files.wordpress.com/2014/02/china-smog11.jpg</a>
+		          </div>    
+            </section>
+            
+            <!-- Why modelling? -->
+            <section>
+            <h1>System understanding</h1>
+            <h2>How does it work?</h2>
+            <h1>Prediction</h1>
+            <h2>What can we expect?</h2>
+            </section>
+            
+            <section>
+            <h1>Measuring is knowledge!</h1>
+            <!-- fig Arduino setup + sensoren -->
+            </section>
+
+            <section>
+            <h1>But what if...</h1>
+            <!-- bos aanplanten,..  -->
+            
+            <h1>Added value of models...</h1>
+            </section>
+            
+            <!-- DATA-Driven vs PROCESS based -->
+            <section> </section>         
+
+            <!-- Troubles of process based modelling practice -->
+            <section>
+            <!-- imbalance between heterogenity of nature vs monocity in used models -> practice of model fitting instead of system understanding -->
+            </section>
+            <section> </section>
+            
+            <!-- Central aim of Phd: How can we enable the 'right model for the right reasons'? -->
+            <section> </section>
+            <section>
+            2 pijlers:
+            <h1>Model building</h1>
+            <h1>Model evaluation</h1>
+            </section>            
+            
+
+            <!-- ############## -->
+            <!-- PART 1. MODELS -->
+            <!-- ############## -->
+            <section>The case of lumped hydrological models: what/who/...</section>
+            <section>Fetish for acronyms? - wordcloud<br>Wat zit er onder de motorkap?!? Essentieel om vergelijking mogelijk te maken: analogie.. => requirements!.</section>
+            <section>Finding the common elements; junctions, fluxes, splits</section>
+            <section>The mathematical translation: ODE - easyweasy</section>
+            <section>Question: how can we transparently communicate about these models zodat verandering effectief daaraan toe te kennen</section>
+            <section>The failed approach: yet another package: pyfuse</section>
+            <section>Over het muurtje kijken: de wwtp community</section>
+            <section>matrix-voorstelling: summary of model structure</section>
+            <section>matrix-voorstelling voldoet aan de requirements, zonder gebruiker technologie op te leggen. YES!</section>
+    
+	    <!-- ############## -->
+            <!-- PART 2. METHODS -->
+            <!-- ############## -->
+            <section>Fetish for acronyms?</section>
+            <section>Finding the common elements: sampling procedures, metrics, reporting</section>
+            <section>Surgery room of model evaluation</section>
+            <section></section>            
+    
+	    <!-- ############## -->
+            <!-- CLOSING -->
+            <!-- ############## -->
+            <section>
+            <h1>Conclusions</h1>
+            - testbaarheid van individuele modelbeslissingen mogelijk maken heeft stelt vereisten aan modelopbouw: REQUIREMENTS!
+            </section>
+            
+            <section data-state="sand">
+                <section>
+                    <h2 style="margin-bottom: 100px; margin-top: 75px">Thank you.</h2>
+                    <table class="hanoi"><tr>
+                        <td><img src="figs/logos/VITO.png" width="300px" /></td>
+                    </tr><tr>
+                        <td><img src="figs/logos/biomath_ugentblue.png" width="300px" /></td>
+                    </tr></table>
+                    <div style="text-align: right; width: 100%" class="fragment">
+                        <ul style="text-align: right; list-style-position: inside; 
+                                   font-size: .5em; line-height: 1.2; width: 100%">
+                            <li><a href="?print-pdf">Printable version</li>
+                            <li><a href="TODO">Available online</li>
+                        </ul>
+                    </div>
+                </section>				
+			</section>
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/defense.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: false,
+				progress: true,
+				history: true,
+				center: true,
+				slideNumber: false,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+		<script type="text/javascript" src="js/phd.js"></script>
+
+	</body>
+</html>

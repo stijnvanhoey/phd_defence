@@ -1,0 +1,2024 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8" />
+
+		<title>Processing Geometric Models for Functional Enrichment</title>
+
+		<meta name="description" content="Processing Geometric Models of Assemblies to Structure and Enrich them with Functional Information" />
+		<meta name="author" content="Ahmad Shahwan" />
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+		<link rel="stylesheet" href="css/reveal.min.css" />
+		<link rel="stylesheet" href="css/theme/defense.css" id="theme" />
+		<link rel="stylesheet" href="css/phd.css" />
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css" />
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<script type="text/x-mathjax-config">
+			MathJax.Hub.Config({
+				tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+			});
+		</script>
+		<script type="text/javascript" src="MathJax/MathJax.js?config=TeX-AMS_HTML-full"></script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		<div class="reveal">
+			<div class="topleft" id="chapter-name">	</div> 
+			<div class="bottomright" id="slide-progress">	</div> 
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section  data-state="sky">
+					<section>
+						<h1>Processing Geometric Models of Assemblies to Structure and Enrich them with Functional Information</h1>
+						<div class="altpanel" style="height: 430px">
+							<div class="alternative fragment spin-out" data-fragment-index="10">
+								<h3 class="name">Ahmad SHAHWAN</h3>
+								<p>
+									<small>Supervised by</small>
+									<h3 class="name">Jean-Claude LEON</h3><h3 class="name"><span>Gilles</span> FOUCAULT</h3>
+								</p>
+								<div>
+									<img width="100" src="images/logos/inpg.png" alt="Grenoble INP" class="logo" />
+									<img width="100" src="images/logos/logo_g-scop.png" alt="G-SCOP" class="logo" />
+									<img width="100" src="images/logos/logo_inria.png" alt="INRIA" class="logo" />
+									<img width="100" src="images/logos/logo_ljk.png" alt="LJK" class="logo" />
+								</div>
+								<div style="margin-top: .5em; font-size: .75em; line-height: 1">
+									Grenoble<br/>
+									August 29, 2014
+								</div>
+							</div>
+							<div class="alternative fragment spin-in" data-fragment-index="10">
+								<p>
+									<small>In the frame of</small><br />
+									<img width="200" src="images/logos/anr.png" alt="ANR" class="logo" />
+									<h3 style="margin-bottom: 0">ROMMA Project</h3>
+									Robust Mechanical Models for Assemblies
+									<br />
+									<small><code>http://romma.lmt.ens-cachan.fr</code></small>									
+								</p><p>
+									<small>Partners</small><br />
+									
+									<img width="100" src="images/logos/siemens_lms.png" alt="Siemens" class="logo" />
+									<img width="100" src="images/logos/distene.png" alt="Distene" class="logo" />
+									<img width="100" src="images/logos/logo_ljk.png" alt="LJK" class="logo" />
+									<img width="100" src="images/logos/airbus_group.png" alt="Airbus Group" class="logo" />
+									<img width="100" src="images/logos/lmt_cachan.png" alt="LMT Cachan" class="logo" />
+									<img width="100" src="images/logos/logo_g-scop.png" alt="G-SCOP" class="logo" />
+									<img width="100" src="images/logos/antecim.gif" alt="Antecim" class="logo" />
+								</p>
+							</div>
+						</div>
+						<aside class="notes">
+							<div data-markdown>
+								* Good morning and thanks for coming to attend my defense. Today I present you my PhD research entitled
+								**Processing Geometric Models of Assemblies to Structure and Enrich them with Functional Information**.
+								* This work is done in the frame of ROMMA project, where we aim at accelerating the
+								mechanical Product Development Process through the reduction of time dedicated to numeric simulations.
+							</div> 
+						</aside>
+					</section>
+				
+					<section>
+						<div>
+							<h3 style="margin-bottom: 5px">What is a DMU?</h3>
+							<table class="hanoi">
+							<col style="width: 260px" />
+							<col style="width: 700px" />
+							<tr>
+							<td>
+								<img src="images/rj_tree.png" height="300px" />
+							</td>
+							<td>
+								<div style="position: relative">
+									<img src="images/what_is_dmu.png" width="700px" class="fragment push-out" data-fragment-index="10"/>
+									<img src="images/what_is_dmu_1.png" width="700px" class="fragment push-in" data-fragment-index="10"/>
+									<div  class="fragment zoom-out" data-fragment-index="10">
+										<span style="position: absolute; bottom: 15px; left: 0px; font-size: .75em; line-height: 1; text-align: left">
+											No<br /> explicit<br /> and robust<br /> relation between<br /> CAD Models and function.
+										</span>
+										<span style="position: absolute; bottom: 15px; right: 15px">
+											<cite>Iyer <i>et al.</i> '05</cite>
+										</span>
+									</div>
+								</div>
+							</td>
+							</tr>
+							</table>
+						</div>
+						<div class="fragment flip-in" data-fragment-index="20">
+							<h3 style="margin-bottom: 5px">What is a structural simulation?</h3>
+							<table class="hanoi">
+							<col style="width: 260px" />
+							<col style="width: 700px" />
+							<tr>
+							<td style="font-size: .7em; line-height: 1; text-align: left">
+								<ul>
+									<li><b>Objective:</b> assess the load distribution over the <em>bolted junctions</em> under prescribed external loads.</li>
+									<li><b>Preparation:</b> 5&nbsp;man-days.</li>
+									<li><b>Computation:</b> 15'.</li>
+								</ul>
+							</td>
+							<td>
+								<img src="images/what_is_sim.png" width="700px" />
+							</td>
+							</tr>
+							</table>
+						</div>
+						<div class="override">
+							<div class="conclusion fragment zoom-out" data-fragment-index="30">
+								How to reduce simulation preparation time?
+							</div>
+						</div>
+						<aside class="notes">
+							<ul style="font-size: .75em">
+								<li>As the title implies, the starting point is the geometric model of an assembly. Collectively referred to as <b>Digital Mock-Up (DMU)</b>.</li>
+								<li>So what is this geometric model? It is indeed a set of 3D objects, each representing a component,
+								put up (assembled) together in a particular spacial configuration.</li>
+								<li>Is it only about geometry in a DMU? <b>Construction tree</b> is little use.
+									<b>Textual</b> information pretty close to function, however not reliable.</li>
+								<li><em>What do we expect from a DMU?</em>: manufacturing, and ...</li>
+								<li><b>Simulation</b>: To study a <b>phenomenon</b> under given "functional" circumstances.</li>
+								<li>Assesses the compliance of a given design with initial requirements.</li>
+								<li>Thanks to the advent of digital computing, numeric simulations replaced costly physical prototypes.</li>
+								<li>Efficient calculations, that can be repeated. Costly <b>preparation</b> time!</li>
+								<li>This preparation time introduces a bottleneck to the PDP, and raises the urging question of how to reduce it.</li>
+							</ul>
+						</aside>
+					</section>
+
+					<section>
+						<h2>Simulation model differ from CAD models</h2>
+						<ul class="economy">
+							<li>Certain <b>hypotheses</b> are made to produce simulation models.</li>
+							<ul>
+								<li>Shape transformations are needed.</li>
+							</ul>
+							<li class="fragment" data-fragment-index="1">Simulation objectives and hypotheses refer to specific <em>functional</em> subsets of components.</li>
+						</ul>
+						<p />
+						<table class="hanoi"><tr>
+							<td><img src="images/rj_bj_init.png" width="300" /></td>
+							<td style="font-size: 5em">&ne;</td>
+							<td><img src="images/rj_bj_patch_ann.png" width="300" /></td>
+						</tr><tr class="fragment flip-in" data-fragment-index="1">
+						<td class="downarrow">&nbsp;</td><td /><td class="uparrow">&nbsp;</td>
+						</tr><tr class="fragment flip-in" data-fragment-index="1">
+							<td><img src="images/rj_bj_intrf_ann.png" width="300" /></td>
+							<td class="rightarrow">BoltedJunction</td>
+							<td><img src="images/rj_bj_comps_ann.png" width="300" /></td>
+						</tr></table>
+						<div class="override">
+							<div class="conclusion fragment zoom-out">
+								CAD models need to be <em>enriched</em> with functional knowledge and <em>restructured</em> accordingly.
+							</div>
+						</div>
+						<aside class="notes">
+							<ul style="font-size: .7em">
+								<li>Why do we need preparation at all?</li>
+								<li>To enable timely calculation, simplifying <b>hypotheses</b> are made after sim. <b>objectives</b> are set.
+								<i>The aim here is to represent components in a simple manner, while staying as faithful as possible to reality.</i></li>
+								<li>Shape transformations are thus required. Automated methods exist to this end.</li>
+								<li>Transformation, however, whether manual or automated, are information-intensive. This is because:
+									<ul>
+										<li>Objectives refer to functional subsets of the DMU, e.g. a bolted junction.</li>
+										<li>Hypotheses refer to particular geometric objects and zones with functional significance; e.g. Locker Nut, Threaded Link.</li>
+									</ul>
+								</li>
+								<li><b>Conclusion: </b> Before geo. preparation can be accelerated and fully-automated, the geo. model of a product represented by the DMU needs to be
+								enriched with functional knowledge. This also implies that the geometry and structure of the DMU
+								need to be reorganized to allow the reception of such knowledge.
+							</ul>
+						</aside>
+					</section>
+
+					<section>
+						<div>
+							<h2>Objectives</h2>
+							<div class="block">
+								Enrich DMUs with <em>functional knowledge</em> required by geometric
+								transformation for <em>FEA preprocessing</em>, taking into account current
+								<em>industrial practices and conventions</em>.
+							</div>
+						</div>
+						<div class="fragment" data-fragment-index="10">
+							<h2>Bottom-up approach</h2>
+							<span class="fragment push-out" data-fragment-index="20"><img src="images/workflow_0.png" width="800" /></span>
+							<span class="fragment push-out" data-fragment-index="30"><img src="images/workflow_1.png" width="800" class="fragment push-in" data-fragment-index="20" /></span>
+							<span class="fragment push-out" data-fragment-index="40"><img src="images/workflow_2.png" width="800" class="fragment push-in" data-fragment-index="30" /></span>
+							<span class="fragment push-out" data-fragment-index="50"><img src="images/workflow_3.png" width="800" class="fragment push-in" data-fragment-index="40" /></span>
+							<span><img src="images/workflow_s.png" width="800" class="fragment push-in" data-fragment-index="50" /></span>
+						</div>
+						<aside class="notes">
+							<ul style="font-size: .75em">
+								<li>This define our objectives...</li>
+								<li>To enrich DMUs with functional knowledge needed by geometric preprocessing for finite element analysis purposes.</li>
+								<li>This should happen in the context of mainstream industrial practices,
+								while taking into account the commonplace representation conventions in this domain.</li>
+								<li>The starting point is <em>pure</em> geometry.</li>
+								<li>Extract geometric interaction between components.</li>
+								<li>Give them potential functional interpretations based on geometry.</li>
+								<li>Qualitatively assess functional interpretations based on their <em>behavior</em> in a mechanical context.</li>
+								<li>Complete the functional image by gathering information bits and pieces into one coherent knowledge base.</li>
+								<li>End up with a DMU, now functionally restructured and enriched.</li> 
+							</ul>
+						</aside>
+					</section>
+					
+					<section>
+						<h2>Overview</h2>
+						<ul class="toc"></ul>
+						<aside class="notes">
+							<ul>
+								<li>In the rest of this presentation, I develope in more detail each of the three stages of the proposed method. Each at a time.</li>
+								<li>But before I briefly introduce the paradigm upon which this approach buils, which is the connection between form and function.</li>
+							</ul>
+						</aside>
+					</section>
+				</section>
+
+				<section data-state="sand" data-chapter="Form and Function">
+				
+					<section>
+						<ul class="toc pause"></ul>
+					</section>
+					
+					<section>
+						<h2>Function, form and behavior</h2>
+						<blockquote>
+							<b>Function</b> is the semantics of a design.<br/>
+							<cite style="float: right">Gero '90</cite>
+						</blockquote>
+						<ul>
+							<li>Relationship between <em>function</em> and structure, i.e. <em>form</em>* <cite>Gero&nbsp;'90, Umeda&nbsp;'09, Qian&nbsp;'96, Albers&nbsp;'06</cite>.</li>
+						</ul>
+						<figure>
+							<img src="images/fbs.png" style="width: 700px"/>
+							<figcaption>
+							Example of form-behavior-structure (FBS) model applied to a buzzer <cite>Qian & Gero '96</cite>.
+							</figcaption>
+						</figure>
+						<ul class="fragment" data-fragment-index="9">
+							<li>Methods to apply this relationship in design <span class="fragment" data-fragment-index="10">suggest <em>behavior</em> to make the connection.</span></li>
+							<table class="hanoi"><tr>
+								<td>Function</td>
+								<td class="rightarrow" style="padding-left: 35px; padding-right: 35px">
+									<span class="fragment zoom-out" data-fragment-index="10"><b>Behavior</b></span>
+								</td>
+								<td>Form</td>
+							</tr></table>
+						</ul>
+						<div class="footnote">* In the domain of mechanical engineering.</div>
+						<aside class="notes">
+							<ul>
+								<li>Function is what designers have in mind when they create a model.</li>
+								<li>The relation between function and structure 
+								has been emphasized throughout the literature.</li>
+								<li>Now a relevant structure is missing in a DMU, however, its embodiment, i.e.	<b>form</b> is available, which provides the first
+								clue to a functionally-significant structure.
+								<li>Efforts were paid to connect function to form to boost the design activity, as a top-down process, in what is referred to as
+								<b>goal achievement path</b>.</li>
+								<li>Those methods applied <b>behavior</b> to make this connection.</li>
+								<li>In our bottom-up approach we aim at making this connection the other way around, binding form to function.</li>
+							</ul>
+						</aside>
+					</section>
+
+					<section>
+						<h2>Challenges<br /> of the bottom-up approach</h2>
+						<ul style="text-align: center; list-style-position: inside">
+							<li>Industrial conventions</li>
+							<table class="hanoi"><tr>
+								<td>
+									<figure>
+										<img src="images/screw_nut_real.png" width="250" />
+										<figcaption>Real shape</figcaption>
+									</figure>
+								</td>
+								<td>&nbsp;v.s.&nbsp;</td>
+								<td>
+									<figure>
+										<img src="images/screw_nut_simple.png" width="250" />
+										<figcaption>Digital shape</figcaption>
+									</figure>
+								</td>
+							</tr></table>
+							<li>Restructuring of the CAD model</li>
+							<table style="font-size: .75em; line-height: 1">
+							<tr><th>Level</th><th>Enrichment</th><th>Restructuring</th></tr>
+							<tr><td>Funct. interface</td>	<td>Comp. interface</td>	<td>Geometric</td></tr>
+							<tr><td>Funct. unit</td>		<td>Component</td>			<td>None</td></tr>
+							<tr><td>Funct. module</td>		<td>Comp. group</td>		<td>Organizational</td></tr>
+							<tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+							<tr>
+								<td><img src="images/3l_inter.png" width="300" /></td>
+								<td><img src="images/3l_comp.png" width="300" /></td>
+								<td><img src="images/3l_group.png" width="300" /></td>
+							</tr>
+							</table>
+						</ul>
+						<aside class="notes">
+							<div style="font-size: .75em" data-markdown>
+								* In this endeavor, we face certain obstacles and challenges.
+								* The difference between real and digital shape:
+									* A direct result of *industrial conventions*.
+									* The example depicts a screw and a nut both bearing a threaded link, represented by a helical cut.
+									* The threaded link is conventionally represented by means of two simple cylinders in the DMU.
+									* Conventions are not unique, equal vs different diameters.
+									* This makes the form-function relation in a DMU **indeterministic**.
+								* The DMU is not yet ready to accommodate functional information:
+								* FEA preprocessing requires functional enrichment of the DMU at different levels, now this would also imply geo. and org. restructuring of the model.
+									* at the interface level, in order to functionally interpret an interaction,
+									we need to isolate this interaction first, geometrically.
+									* at the component level, no particular structuring is needed, as components are already
+									isolated in the DMU. Even though components themselves are restructured geometrically to allow
+									enrichment at the interface level.
+									* at the functional group level, components of a DMU need to be regrouped in functional subsets, requiring an organizational restructuring.
+									* Now this leads us to the first stage of our proposed approach, which is...
+							</div>
+						</aside>
+					</section>
+					
+				</section>			
+	
+				<section data-state="sky" data-chapter="Form Analysis">				
+					<section>
+						<ul class="toc pause"></ul>
+					</section>
+				
+					<section>
+						<h2>Form at the outset</h2>
+						<ul style="margin-bottom: 1em">
+							<li>Function stems from <em>interactions</em> between components <cite>De&nbsp;Kleer '98, Albers '02</cite>.</li>
+							<li>For mechanical components, functionality happens at the <em>geometric interface</em> level.</li>
+							<li><i>Top-down</i> methods built on functional interaction to boost geometric design <cite>Roy & Bharadwaj '02, Kim '04</cite>.</li>
+						</ul>
+						<figure>
+							<img src="images/roy_02.png" width="600" />
+							<figcaption>Relationship between form and function at the interface level <cite>Roy & Bharadwaj' 02</cite></figcaption>
+						</figure>
+						<div class="override">
+							<div class="conclusion fragment zoom-out">
+								To capture functionality, geometric interactions need to be analysed first.
+							</div>
+						</div>					
+						<aside class="notes">
+							<ul style="font-size: .75em">
+								<li>Before we develop further in this part we ask ourselves the question.</li>
+								<li><b>Q: </b>Is geometry a valid entry point?</li>
+								<li>To answer this question we observe that a single component cannot deliver a significant function on its own. Functionality is the result of interaction between functional units.</li>
+								<li>In mechanical engineering, this interaction has a geometric nature.</li>
+								<li>Literature provides <b>Top-down gaol achiev. methods</b> that build on this functional interaction paradigm.</li>
+								<li><b>Conclusion:</b> Now since function stems at the geometric interface level for mech. products, geo. interactions between components should be analysed first in a <b>bottom-up manner</b> if any functionality is to be obtained.</li>
+								<li>This proves geometry to be a valid entry point.</li>
+							</ul>
+						</aside>
+					</section>
+				
+					<section>
+						<table class="hanoi">
+								<colgroup>
+									<col style="width: 30%" />
+									<col style="width: 70%" />
+								</colgroup>
+								<tr><td>
+									<figure>
+										<img src="images/thread_convention.png" width="200" />
+										<figcaption>Conventional Rep. of a <b>threaded link</b></figcaption>
+									</figure>
+								</td>
+								<td>
+									<h2 class="definition">Conventional Interface</h2>
+									<div>
+										A CI is a conceptual entity that represents an interaction between two components in an assembly.
+									</div>
+									<ul>
+										<li>Identified by the <b>geometric interaction</b> of components in a DMU.</li>
+										<li>Augmented with semantics such as physical and functional properties.</li>
+									</ul>
+								</td></tr>
+							</table>
+						
+							<table class="hanoi">
+							<colgroup>
+								<col style="width: 30%" />
+								<col style="width: 70%" />
+							</colgroup>
+							<tr><td style="line-height: 1; letter-spacing: 0">
+								<img src="images/ci_types_0.png" width="300px" class="embedded fragment push" data-fragment-index="1">
+								<img src="images/ci_types_1.png" width="300px" class="embedded fragment push" data-fragment-index="2">
+								<img src="images/ci_types_2.png" width="300px" class="embedded fragment push" data-fragment-index="3">
+								<img src="images/ci_types_3.png" width="300px" class="embedded fragment push-in" data-fragment-index="4">
+							</td>
+							<td style="text-align: left">
+								<h2 class="fragment definition" data-fragment-index="1">CI types</h2>
+								<ul style="width: 100%">
+									<li class="fragment" data-fragment-index="2">
+										<span class="fragment grow" data-fragment-index="5">Contact;</span>
+										<span style="width: 60%; float: right">curve or surface</span>
+									</li>
+									<li class="fragment" data-fragment-index="3">
+										<span class="fragment grow" data-fragment-index="5">Interference;</span>
+										<span style="width: 60%; float: right">shared volume</span>
+									</li>
+									<li class="fragment" data-fragment-index="4">
+										<span class="fragment strike-through" data-fragment-index="5">Clearance.</span>
+										<span style="width: 60%; float: right">play distance</span>
+									</li>
+								</ul>
+							</td></tr>
+						</table>
+						
+						<aside class="notes">
+							<div  data-markdown style="font-size: .75em">
+								* Now to seize geometric interaction between components we define a conceptual entity that we refer to as **Conventional Interface**.
+								* Even though identified by their geometric properties, CIs can, and will, be assigned other physical and functional properties as we'll see shortly.
+								* Because of their intrinsic geometric nature, CIs are classified into three categories:
+									* *Contacts* that happen when components touch each others without having a common volumes.
+									* *Interferences* happen when components penetrate each others leading to a common volume.
+									* *Clearances* when surfaces of components keep a certain distance (play) between each others.
+								* We observe the unrealistic, thus conventional, nature of **interferences**.
+									* real objects cannot have commun volumes.
+								* The detection of clearances depends on the knowledge of the play, a functional information that is not available at the outset.
+									* This dependency prevents us from exploiting clearances, as for now.
+							</div>
+						</aside>
+					</section>
+				
+				
+					<section>
+						<table class="hanoi">
+							<colgroup>
+								<col style="width: 30%" />
+								<col style="width: 70%" />
+							</colgroup>
+							<tr><td>
+								<figure>
+									<img src="images/screw_nut_fi.png" width="200" />
+									<figcaption><b>Threaded link</b>: a functional interaction (source ASM)</figcaption>
+								</figure>
+							</td>
+							<td style="text-align: left">
+								<h2 class="definition">Functional Interfaces</h2>
+								<div>
+									An FI is an interaction between two neighboring mechanical components that fulfills, or contributes to the fulfillment of a function.
+								</div>
+								<ul>
+									<li>Functionally <em>explains</em> an CI.</li>
+								</ul>
+							</tr><tr>
+							<td>&nbsp;</td><td>&nbsp;</td></tr><tr class="fragment">
+							<td style="text-align: right"><b>Observations</b></td>
+							<td style="text-align: left">
+								<ul><li><em>One</em> CI <em>many</em> FIs!</li></ul>
+							</td></tr><tr  class="fragment">
+							<td style="text-align: right">&nbsp;</td>
+							<td style="text-align: left">
+								<ul><li>Functional interfaces are represented through canonical surfaces.</li></ul>
+							</td></tr>
+						</table>
+						<table class="hanoi fragment" style="margin-top: 15px"><tr>
+							<td><img src="images/screw_nut_real.png" width="200" /></td>
+							<td><img src="images/icons/rightarrow_xs.png" /></td>
+							<td><img src="images/screw_nut_simple.png" width="200" /></td>
+							<td>&nbsp;</td>
+							<td><img src="images/gear_real.png" width="200" /></td>
+							<td><img src="images/icons/rightarrow_xs.png" /></td>
+							<td><img src="images/gear_simple.png" width="200" /></td>
+						</tr></table>
+						<div class="override">
+							<div class="conclusion fragment zoom-out">
+								Only geometric interactions between canonical surfaces are of significant interest.
+							</div>
+						</div>
+						<aside class="notes">
+								<ul style="font-size: .75em">	
+									<li>In an attempt to functionally explain CIs, we define the <b>Functional Interface</b> that captures inter-component 
+									interactions that fulfil or participate to the fulfilment of a set of functions.</li>
+									<b>Observations:</b>
+									<li>A given geometric configuration, i.e. a CI, can be assigned more than one functional interpretation, i.e. FI: a result of indeterministic relation between form and function.</li>
+									<li>Now if we refer to geometric surfaces of a FI as <b>functional surfaces</b>, we observe that functional surfaces are represented <b>conventionally</b> through canonical surfaces.</li>
+									<li>This is because even when non-canonical surfaces convey functional meaning, such as helical cuts and involute profiles, they are often machined independantly from the CAD model.</li>
+									<li><b>Conclusion:</b> We can then safely assume that as long as functionality is concerned, only geometric interactions between canonical surfaces are of significant interest.</li>
+								</ul>
+						</aside>
+					</section>
+				
+				
+					<section>
+						<h2 style="margin-bottom: 0px">Simple, yet efficient geometric interaction detection</h2>
+						<div style="height: 300px">
+							<ul class="fragment push-out" data-fragment-index="1">
+								<li>Generation of a unique geometric representation:</li>
+								<ul>
+									<li class="fragment" data-fragment-index="0.5">Maximal edges and surfaces.</li>
+								</ul>
+							</ul>
+							<ul class="fragment push-in" data-fragment-index="1">
+								<li>Three-level filtering:</li>
+								<ol>
+									<li class="fragment" data-fragment-index="2">Bounding boxes;</li>
+									<li class="fragment" data-fragment-index="3">Geometric attributes comparison;</li>
+									<li class="fragment" data-fragment-index="4">Boolean operators.</li>
+								</ol>
+								<li class="fragment" data-fragment-index="6">
+									Efforts in the frame of ROMMA project. <span style="float: right"><cite>Jourdes <i>et al.</i>&nbsp;'14</cite></span>
+								</li>
+							</ul>
+						</div>
+						<div>
+							<div class="fragment push-out" data-fragment-index="1"><table class="hanoi"><tr>
+								<td>								
+									<img src="images/geom_init.png" width="300px" />
+								</td>
+								<td>
+									<img src="images/icons/rightarrow_xs.png"  />
+								</td>
+								<td>
+									<img src="images/geom_void.png" width="300px" class="embedded fragment push-out" data-fragment-index="0.5"/>
+									<img src="images/geom_max.png" width="300px" class="embedded fragment push-in" data-fragment-index="0.5" />
+								</td>
+							</tr></table></div>
+							<div class="fragment push-in" data-fragment-index="1"><table class="hanoi"><tr>
+								<td><img src="images/geom_init.png" width="300px"  /></td>
+								<td><img src="images/icons/rightarrow_xs.png"  /></td>
+								<td>
+									<img src="images/geom_max.png" width="300px" class="embedded fragment push-out" data-fragment-index="2" />
+									<img src="images/geom_bndbx.png" width="300px" class="embedded fragment push" data-fragment-index="2" />
+									<img src="images/geom_f2f.png" width="300px" class="embedded fragment push" data-fragment-index="3" />
+									<img src="images/geom_final.png" width="300px" class="embedded fragment push-in" data-fragment-index="4" />
+								</td>
+							</tr></table></div>
+						</div>
+						<aside class="notes">
+							<div style="font-size: .75em" data-markdown>
+								* This allows us to develop a simple, yet efficient algorithm to detect geometric interactions.
+								* Before any detection is made, a unique geo. rep. of shape must be obtained,
+								unlike the one available in today's CAD models.
+								We refer to such a representation as Maximal edges and surfaces representation.
+								* Once such a rep is obtained (at the topological level) a three level filtering is applied to extract
+								geometric interactions, starting by a bounding boxes check to eliminate obvious negatives.
+								* Next, canonical surfaces of neighboring comps, according to the bb check, are compared pair-wise
+								using their geometric properties.
+								* Candidates of potential interactions are reported to the 3rd filter: a boolean check
+								that eliminates false positives & precisely delimits the interaction zone.
+								* It is worth mentioning that other efforts has been made to precisely and efficiently detect certain geo. interfaces in the frame of ROMMA.
+								* This leads to the precise determination of geometric interactions between components.
+							</div>
+						</aside>
+					</section>
+				
+					<section>
+						<h2>Assembly Graph Structure</h2>
+						<table class="hanoi">
+							<colgroup>
+								<col style="width: 450px" />
+								<col />
+							</colgroup>
+							<tr><td>
+								<div style="position: relative">
+									<img src="images/cig_cad.png" />
+									<img src="images/cig_only.png" style="position: absolute; left: 0px; top: 0px" class="fragment spin-in" data-fragment-index="10" />
+									<img src="images/rj_tree.png" style="position: absolute; left: 30px; top: 30px" class="fragment spin-out" data-fragment-index="10" />
+								</div>
+							</td>
+							<td style="text-align: left">
+								<ul>
+									<li>CIs connect components together.</li>
+									<li>A <b>graph</b> whose</li>
+									<ul>
+										<li>nodes are the components;</li>
+										<li>edges are the CIs.</li>
+									</ul>
+									<li><em>Overrides</em> DMU <b>tree</b>-structure.</li>
+								</ul>
+							</td></tr>
+						</table>
+						<div class="fragment flip-in" data-fragment-index="10">
+							<h2 class="definition">Conventional Interface Graph</h2>
+							<div>
+								A graph that represents geometric interactions between components in a DMU.
+							</div>
+						</div>
+						<div class="override">
+							<div class="conclusion fragment zoom-out">
+								First step toward DMU restructuring.
+							</div>
+						</div>
+						<aside class="notes">
+							<div data-markdown>
+								* Each detected CI links two components, this defines a certain topology over the DMU components.
+								* This is captured in what we call the Conventional Interface Graph, that organizes the DMU in a
+								more functionally-relevant way compared to the construction tree.
+								* This marks a first step into the functional restructuring of the DMU.
+							</div>
+						</aside>
+					</section>
+					
+					<section>
+						<h2>Results</h2>
+						<div style="float: left; width: 45%">
+							<ul>
+								<li>Centrifugal pump with 43 components.</li>
+								<li>Geo. Analysis time
+									<table><tr>
+										<td>Bool. Op. </td><td>≈ 8'!</td>
+									</tr><tr>
+										<td>3-level filtering </td><td>≈ 0.15''.</td>
+									</tr></table>
+								</li>
+								<li class="fragment" data-fragment-index="10">100-edge CIG:
+									<ul>
+										<li>87 contacts;</li>
+										<li>13 interferences.</li>
+									</ul>
+								</li>								
+							</ul>
+						</div>
+						<figure style="float: right; width: 45%">
+							<img src="images/pump_dmu.png" />
+							<figcaption>
+								Cross section in the DMU of a centrifugal pump.
+							</figcaption>
+						</figure>
+						<figure class="fragment flip-in" data-fragment-index="10">
+							<img src="images/pump_cig.png" width="100%"/>
+						</figure>
+					</section>
+					
+					<section>
+						<h2>Results</h2>
+						<div style="float: left; width: 45%">
+							<ul>
+								<li>Root joint with 148 components.</li>
+								<li>Geo. Analysis time
+									<table><tr>
+										<td>3-level filtering </td><td>< 0.2''.</td>
+									</tr></table>
+								</li>
+								<li class="fragment" data-fragment-index="10">512-edge CIG:
+									<ul>
+										<li>396 contacts;</li>
+										<li>116 interferences.</li>
+									</ul>
+								</li>								
+							</ul>
+						</div>
+						<figure style="float: right; width: 45%">
+							<img src="images/rootjoint_original.png" />
+							<figcaption>
+								DMU of an aircraft root joint.
+							</figcaption>
+						</figure>
+						<figure class="fragment flip-in" data-fragment-index="10">
+							<img src="images/rj_clean_cig.png" width="100%"  style="margin-top: 1em"/>
+						</figure>
+					</section>
+
+					<section>
+						<h2>Form meets function</h2>
+						<ul style="float: left; width: 45%">
+							<li><b>Objective</b> link form to function. <span style="float: right"><cite>Gero '90, Qian '96</cite></span></li>
+							<li class="fragment" data-fragment-index="100"><b>Problem</b><br />more than one possible interpretation. <span style="float: right"><cite>Roy '02</cite></span></li>
+							<li class="fragment zoom-out" data-fragment-index="200"><em><b>Need to incorporate context.</b></em></li>
+						</ul>
+						<table class="hanoi" style="float: right; width: 45%;"><tr>
+							<td>
+								<img src="images/fi_threaded_link.png" width="100px"  />
+							</td>
+							<td>
+								<img src="images/icons/leftarrow_xs.png" />
+							</td>
+							<td>
+								<img src="images/ci_cylindric_interference.png" width="100px" />
+							</td>
+							<td>
+								<img src="images/icons/rightarrow_xs.png" class="fragment" data-fragment-index="100" />
+							</td>
+							<td>
+								<img src="images/fi_spline_link.png" width="100px" class="fragment" data-fragment-index="100" />
+							</td>
+						</tr><tr style="font-size: .5em; line-height: 1">
+							<td>
+								Threaded Link
+							</td>
+							<td></td>
+							<td>
+								Cylindric Interference
+							</td>
+							<td></td>
+							<td class="fragment" data-fragment-index="100">
+								Spline Link
+							</td>
+						</tr></table>
+						<div class="fragment" data-fragment-index="100">
+							<p style="margin-top: 25px; clear: both">Spline link</p>
+							<div class="post">
+									<img src="images/spline-shaft_section.png" height="200px"  />
+									<img src="images/spline-shaft_anim.gif"  />
+									<img src="images/spline-shaft_iso.png" height="200px"  />
+							</div>
+						</div>
+						<aside class="notes">
+							<div style="font-size: .75em"data-markdown>
+								* Up till now functionality has not been mentioned! Our ultimate objective is to bind form to function,
+								a link that is well-established in the literature.
+								* If this connection is to be made as this stage, we know that we can interpret a Cyl Interference,
+								a CI, as a Threaded Link, an FI.
+								* However, it is only part of the truth, as a Cyl Interference can also represent a Spline link.
+								An FI that is show in the image and that transmits rotation while allowing translation.
+								* In order to resolve this ambiguous interpretation, more information must be incorporated,
+								especially those about the context of the interface. 
+							</div>
+						</aside>
+					</section>
+
+					<section>
+						<h2>Functional interpretations</h2>
+						<ul>
+							<li>Hierarchical representation of interfaces (<em>taxonomies</em>).</li>
+							<li>Each CI is associated multiple FIs acc. a <em>dictionary</em>.</li>
+						</ul>
+						<img src="images/taxo_ci_fi.png"  width="75%" />
+						<div class="override">
+							<div class="conclusion fragment zoom-out">
+								Geometric and functional <em>knowledge structuring</em> at the interface level.
+							</div>
+						</div>
+						<aside class="notes">
+							<ul>
+								<li>At this stage, however, we are interested in assigning <b>all</b> possible functional interpretations to 
+								a given geometric config. represented by a CI.</li>
+								<li>To this end, we organize geometric and functional knowledge at the interface level in hierarchies
+								called FI and CI taxonomies resp.</li>
+								<li>Functional interpretation then happens at the leaf-level of those taxo.
+								Each CI is associated potentially to multiple FIs according to a <em>dictionary</em> that reflects mainstream industrial conventions.</li>
+								<li>This frames funct. knowledge into a preliminary structure.</li>
+							</ul>
+						</aside>
+					</section>
+					
+					<section data-transition-speed="slow">
+						<h2>Relevant structure</h2>
+						<table class="ladder" id="meter1">
+							<tr>
+								<th />
+								<th>Form</th>
+								<th><img style="width: 200px" src="images/fonctionometer.png" /></th>
+								<th>Function</th>
+								<th />
+							</tr><tr>
+								<td>module</td>
+								<td>Group</td>
+								<td>
+									<div style="width: 200px">
+										<div class="fragment module" data-fragment-index="10">&nbsp;</div>								
+									</div>
+								</td>
+								<td>?</td>
+								<td class="leftarrow fragment" data-fragment-index="10">
+									<span class="fragment roll-in" data-fragment-index="10">Geometry</span>
+								</td>
+							</tr><tr>
+								<td>unit</td>
+								<td>Component</td>
+								<td>
+									<div style="width: 200px">
+										<div class="fragment component" data-fragment-index="10">&nbsp;</div>								
+									</div>
+								</td>
+								<td>?</td>
+								<td>&nbsp;</td>
+							</tr><tr>
+								<td>interface</td>
+								<td>CI</td>
+								<td>
+									<div style="width: 200px">
+										<div class="fragment interface" data-fragment-index="10">&nbsp;</div>	
+									</div>
+								</td>
+								<td>FIs</td>
+								<td class="leftarrow fragment" data-fragment-index="10">
+									<span class="fragment roll-in" data-fragment-index="10">Geometry</span>
+								</td>
+							</tr>
+						</table>
+						<div style="position: relative; width: 300px; height: 300px; margin: 0 auto">
+							<img src="images/milestone_0_o.png" width="300" class="milestone-image" />
+							<img src="images/milestone_0_n.png" width="300" class="milestone-image fragment" id="milestone_0_n" data-fragment-index="10" />
+							<img src="images/milestone_0_s.png" width="300" class="milestone-image fragment" id="milestone_0_s" data-fragment-index="10" />
+							<img src="images/milestone_0_e.png" width="300" class="milestone-image fragment" id="milestone_0_e" data-fragment-index="10" />
+							<img src="images/milestone_0_w.png" width="300" class="milestone-image fragment" id="milestone_0_w" data-fragment-index="10" />
+							<img src="images/milestone_0_df.png" width="300"
+								class="milestone-image fragment zoom-out" data-fragment-index="10" />
+						</div>
+						<aside class="notes">
+							<div data-markdown>
+								At this stage:
+								
+								* The connection between form and function is made at the interface level.
+								* A primary restructuring is made at the DMU level, to allow functional enrichment.
+								* The link at the interface level is, however, ambiguous.
+								* To remedy this ambiguity, we need context. This leads us to a behavioral study of the DMU. The subjet of the next part. 
+							</div>
+						</aside>
+					</section>
+				</section>
+				
+				<section data-state="sand" data-chapter="Qualitative Behavioral Study">
+					<section>
+						<ul class="toc pause"></ul>
+					</section>
+
+					<section>
+						<h2>Behavior as a broker</h2>
+						<ul>
+							<li>Can <em>behavior</em> <cite>Gero '90, Umeda '09, Qian '96, Albers'06</cite> be used to mend the nexus from <em>form</em> to <em>function</em>?
+
+						<table class="hanoi fragment" data-fragment-index="30"><tr><td>
+							<img src="images/ci_cylindric_interference.png" width="120px" class="fragment switch" data-fragment-index="40"/>
+							<span>
+								<img src="images/fi_threaded_link.png" width="120px" class="fragment switch" data-fragment-index="45" />
+								<span>
+									<img src="images/fi_threaded_link_f.png" width="120px" class="fragment switch" data-fragment-index="50" />
+									<span>
+										<img src="images/fi_spline_link.png" width="120px" class="fragment switch" data-fragment-index="55" />
+										<img src="images/fi_spline_link_f.png" width="120px" />
+									</span>
+								</span>
+							</span>
+							</td><td>					
+								<table class="hanoi">
+									<col style="border-right: 1px solid black" />
+									<col style="border-right: 1px solid black" />
+									<col />
+								<tr>
+									<td rowspan="2" style="text-align: right; border-right: 1px solid black">Cylindric<br/>Interference</td>
+									<td colspan="2" style="border-bottom: 1px solid black">Stand point</td>
+								</tr><tr style="border-bottom: 1px solid black">
+									<td>Geometric</td><td>Behavioral</td>
+								</tr><tr class="fragment" data-fragment-index="40">
+									<td style="text-align: right">Threaded Link</td>
+									<td style="color: green">valid</td><td style="color: green">
+										<span class="fragment zoom-out" data-fragment-index="45">valid</span>
+									</td>
+								</tr><tr class="fragment" data-fragment-index="50">
+									<td style="text-align: right">Spline Link</td>
+									<td style="color: green">valid</td><td style="color: red">
+										<span class="fragment zoom-out" data-fragment-index="55">invalid</span>
+									</td>
+								</tr></table>
+							</td>
+						</tr></table>
+							<li class="fragment" data-fragment-index="60"><b>Objective</b> use a qualitative behavioral representation to deduce functional knowledge.</li>
+							<li class="fragment" data-fragment-index="70"><em>Reference states</em> define behavioral validity.
+								<ul>
+									<li>Elimination of FI that violate a given behavior.</li>
+								</ul>
+							</li>
+						</ul>
+						<aside class="notes">
+							<div style="font-size: .75em" data-markdown>
+								* **Question** Can behavior, used throughout the literature to establish the link function-to-form
+								be used to mend the yet ambiguous form-to-function link?
+								* To illustrate this possibility we look at the example of a Cylindric Interfarence: it is valid to interpret it as a Threaded Link both geometrically and from a mechanical behavior standpoint.
+									* However, and even though geometrically valid, a Spline Link is invalid behavior-wise: forces cannot be balanced.
+								* This can be said intuitively as the FI Spline Link does not fit in the given context,
+								assembly would fall apart.
+								* **Objective** use such a behvioral judgement to narrow down multiple functional interpret per CI.
+								* Introducing the concept of Ref. States that define what a valid behavior is.
+									* The goal then shifts to eliminating functional interpretations that violate one or more reference states.  
+							</div>
+						</aside>
+					</section>
+
+					<section>
+						<h2>Reference States</h2>
+						<ul style="width: 100%">
+							<li><b>Hypotheses</b>
+							<ul style="clear: none; float: right; width: 70%">
+								<li>Rigid bodies;</li>
+								<li>Energy-conservative systems;</li>
+								<li>Only mechanical interactions.</li>
+							</ul></li>
+						</ul>
+						<div class="fragment flip-in" data-fragment-index="10">
+							<table class="hanoi">
+								<colgroup>
+									<col style="width: 30%" />
+									<col style="width: 70%" />
+								</colgroup>
+								<tr><td>
+									<figure>
+										<img src="images/rs_i.png" />
+										<figcaption>
+											$\iint\limits_{\partial C} \vec{f_1} \; dS + \iint\limits_{\partial C} \vec{f_2} \; dS = \vec{0}$
+										</figcaption>
+									</figure>
+								</td>
+								<td>
+									<h2 class="definition">Product at rest</h2>
+									<div>
+										Components of a product hold in place. <span style="float: right">Ref. State I</span>
+									</div>
+									<div style="height: 100px; position: relative">
+										<div class="fragment spin-out" style="position: absolute; left: 0; top: 0" data-fragment-index="20">
+											<ul>
+												<li>Mechanical equilibrium:</li>
+												<ul style="float: right">
+													<li>$\sum \vec{f} = \vec{0}, \; \sum \vec{m} = \vec{0}$.</li>
+												</ul>
+											</ul>
+										</div>
+										<div class="fragment spin-in" style="position: absolute; left: 0; top: 0" data-fragment-index="20">
+											$$\sum\limits_{i \in \mathcal{I}(C)} \mathsf{W}_{i} = \sum \{ \vec{f}_{i} | \vec{m}_{i} \} = \{ \vec{0} | \vec{0} \}$$
+										</div>
+									</div>
+								</td></tr>
+							</table>
+							<ul>
+								<li style="clear: both">Casting a <em>physical dimension</em> on mere geometry.</li>
+								<li>External forces and moments on a rigid body:</li>
+									<ul>
+										<li>can be represented using a <em>wrench screw</em> <cite>Poinsot 1861</cite>;</li>
+										<li>can only go through CIs of component C: $\mathcal{I}(C)$.</li>
+									</ul>
+							</ul>
+						</div>
+						<aside class="notes">
+							<div style="font-size: .75em" data-markdown>
+								* Few global assumptions are made:
+									* Components are rigid bodies. Deformations are negligeable.
+									* Energy-conservative systems. Friction-free surfaces.
+									* Only mechanical interactions are accounted for, i.e. all physical interactions with a component
+									go through its CIs.
+								* First ref. state: the product is at rest. Components of an assembly hold in place.
+									* This can be formalized by mech. equil. eqs.
+									* This statement casts a physical dimension on pure geometry of the DMU.
+									* We know that a system of external forces and moment can be represented
+								by a vector force and a vector moment, i.e. a wrench screw.
+								* Now assigning a wrench screw to each CI according to a given FI makes the m.e.e.
+								boil down to the statement that the sum of wrench screws over all CI of any given component is null.
+							</div>
+						</aside>
+					</section>
+
+					<section>
+						<h2>Qualitative physical representation</h2>
+						<ul>
+							<li>Force and moment values are <b>not available</b> in a DMU!</li>
+							<li>Need for <em>qualitative</em> representation:
+								<ul>
+									<li class="fragment" data-fragment-index="40">values: <em>real intervals</em>.
+										<table class="screwvalue"><tr>
+											<td>Not Null</td><td>$\odot$</td><td>$]-\infty, 0[ \: \cup \: ]0, +\infty[$</td>
+											</tr><tr>
+											<td>Null</td><td>$\oslash$</td><td>$[0, 0]$</td>
+											</tr><tr>
+											<td>Strictly Positive</td><td>$\oplus$</td><td>$]0, +\infty[$</td>
+											</tr><tr>
+											<td>Strictly Negative</td><td>$\ominus$</td><td>$]-\infty, 0[$</td>
+											</tr><tr>
+											<td>Arbitrary</td><td>$\otimes$</td><td>$]-\infty, +\infty[$</td>
+										</tr></table>
+									</li>
+									<li class="fragment" data-fragment-index="50">and operations: <em>interval arithmetics</em>.
+										<div>
+											$$
+											\begin{array}{l@{}l@{}l}
+											K + L &= \{z | \exists (x, y) \in K \times L, z = x + y &\} \\
+											K \cdot L &= \{z | \exists (x, y) \in K \times L, z = x \cdot y &\}
+											\end{array}
+											$$
+										</div>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<aside class="notes">
+							<div style="font-size: .75em" data-markdown>
+								* **Problem** quantitatives measures of force and moment are not available in a DMU.
+								* Need for qualitative representations of these physical quantities.
+								* **Solution** interval arithmetics.
+							</div>
+						</aside>
+					</section>
+
+					<section>
+						<div style="position: absolute; top: 5px">
+							<h2>Elimination of statically-invalid FIs</h2>
+							<table class="hanoi"><tr>
+								<td>
+									<img src="images/capscrew_nut.png" width="400px" />
+								</td>
+								<td>
+									<img src="images/icons/rightarrow_xs.png" />
+								</td>
+								<td>
+									<img src="images/capscrew_nut_cig.png" width="400px" class="embedded fragment push-out" data-fragment-index="6"/>
+									<span class="fragment push-out" data-fragment-index="50">
+										<img src="images/capscrew_nut_cig_c.png" width="400px" class="embedded fragment push-in" data-fragment-index="6"/></span>
+									<span class="fragment push-out" data-fragment-index="61">
+										<img src="images/capscrew_nut_cig_1_c.png" width="400px" class="embedded fragment push-in" data-fragment-index="50"/></span>
+									<span class="fragment push-out" data-fragment-index="62">
+										<img src="images/capscrew_nut_cig_2_c.png" width="400px" class="embedded fragment push-in" data-fragment-index="61"/></span>
+									<span>
+										<img src="images/capscrew_nut_cig_1_b.png" width="400px" class="embedded fragment push-in" data-fragment-index="62"/></span>
+									<span></span>
+								</td>
+							</tr></table>
+						</div>
+
+						<div class="override" data-fragment-index="5" style="position: absolute; top: 400px"><div class="fragment fade-out" data-fragment-index="7">
+							<ul>
+								<li>Iterate CIG nodes until there's no more FIs to eliminate.</li>
+								<li class="fragment" data-fragment-index="6">Heuristically pick node C.</li>
+							</ul>
+						</div></div>						
+						<div class="override fragment" data-fragment-index="7" style="position: absolute; top: 400px"><div class="fragment fade-out" data-fragment-index="60">
+							<table class="hanoi" style="float: left"><tr>
+								<td rowspan="3">
+									<img src="images/taxo_fi.png" height="300px" class="fragment push-out" data-fragment-index="10" />
+									<img src="images/taxo_ps_tl.png" height="300px" class="fragment push" data-fragment-index="10"/>
+									<img src="images/taxo_ps_sl.png" height="300px" class="fragment push-in" data-fragment-index="20"/>
+								</td>
+								<td><img src="images/cyl_cyl.png" height="100px"/></td>
+							</tr></tr>
+								<td class="rightarrow" style="font-size:.75em">Coordinate<br />alignment</td>
+							</tr></tr>
+								<td><img src="images/pln_pln.png" height="100px"/></td>
+							</tr></table>						
+							<table class="hanoi" style="float: left"><tr>
+								<td>CI<sub>1</sub></td><td></td><td>CI<sub>2</sub><td/></td><td></td><td>C</td>
+							</tr><tr style="font-size: 0.5em" class="fragment" data-fragment-index="10">
+								<td>
+									<figure>
+										<span>$\left\{ \begin{array}{c|c} \otimes & \otimes \\ \otimes & \otimes \\ \odot & \oslash \end{array} \right\} $</span>
+										<figcaption style="font-size: 1em">Threaded Link</figcaption>
+									</figure>
+								</td>
+								<td style="font-size: 2em">+</td>
+								<td>
+									<figure>
+										$\left\{ \begin{array}{c|c} \oslash & \otimes \\ \oslash & \otimes \\ \ominus & \oslash \end{array} \right\} $
+										<figcaption style="font-size: 1em">Planar Support</figcaption>
+									</figure>
+								</td>
+								<td style="font-size: 2em">=</td>
+								<td style="color: green">
+									<figure>
+										$\left\{ \begin{array}{c|c} \otimes & \otimes \\ \otimes & \otimes \\ \otimes & \otimes \end{array} \right\} $
+										<figcaption style="font-size: 1em">Sum</figcaption>
+									</figure>
+								</td>
+							</tr><tr style="font-size: 0.5em" class="fragment" data-fragment-index="20">
+								<td>
+									<figure class="fragment highlight-red" data-fragment-index="50">
+										$\left\{ \begin{array}{c|c} \otimes & \otimes \\ \otimes & \otimes \\ \oslash & \otimes \end{array} \right\} $
+										<figcaption style="font-size: 1em">Spline Link</figcaption>
+									</figure>
+								</td>
+								<td style="font-size: 2em">+</td>
+								<td>
+									<figure>
+										$\left\{ \begin{array}{c|c} \oslash & \otimes \\ \oslash & \otimes \\ \ominus & \oslash \end{array} \right\} $
+										<figcaption style="font-size: 1em">Planar Support</figcaption>
+									</figure>
+								</td>
+								<td style="font-size: 2em">=</td>
+								<td style="color: red">
+									<figure>
+										$\left\{ \begin{array}{c|c} \oslash & \otimes \\ \oslash & \otimes \\ \ominus & \oslash \end{array} \right\} $
+										<figcaption style="font-size: 1em">Sum</figcaption>
+									</figure>
+								</td>
+							</tr></table>
+							
+							<table style="position: fixed; bottom: 15px; right: 5px; font-size: .5em; margin: 0; line-height: 1"><tr>
+								<td>$\odot$</td><td>Not Null</td>
+								</tr><tr>
+								<td>$\oslash$</td><td>Null</td>
+								</tr><tr>
+								<td>$\oplus$</td><td>Strictly Positive</td>
+								</tr><tr>
+								<td>$\ominus$</td><td>Strictly Negative</td>
+								</tr><tr>
+								<td>$\otimes$</td><td>Arbitrary</td>
+							</tr></table>		
+						</div></div>
+						<div class="override fragment" data-fragment-index="60" style="position: absolute; top: 400px">
+							<ul>
+								<li>Nothing more to do at node C<span class="fragment" data-fragment-index="61">, close it.</span></li>
+								<li class="fragment" data-fragment-index="62">Pick next component...</li> 
+							</ul>
+							<div class="override">
+								<div class="conclusion fragment zoom-out">
+									<span style="font-weight:normal">First level of behavioral filtering at the interface level.</span><br />
+									Eliminate FIs that produce static invalidity.
+								</div>
+							</div>
+						</div>
+						<aside class="notes">
+							<div style="font-size: .75em" data-markdown>
+								* **The idea:** iterate CIG nodes, checking FIs validity against RS I,
+								and eliminating FIs that violate this RS, until there's no more FIs to eliminate.
+								* An illustrative example to show the outlines of the algo. The same principal can be generalized to
+								more complicated models.
+								* Heuristically pick next component to allow the algo to converge faster.
+								* All possible solutions are evalutated. Wrench screws are borrowed from the FI taxonomy.
+								* Screws are summed, leading to possible point of application and coord sys changes.
+									* We know how to do it, thanks to interval arithmetics.
+								* Sums of screws are checked for "nullability".
+									* Does the interval contain zero?
+								* Invalid solutions leads to the elimination of FIs.
+								* When nothing more can be done, the component is closed.
+								* Next! 
+								* **Conclusion:** A first level of filtering of a considerable amount of irrelevant functional interpretations at the interface level.
+							</div>
+						</aside>
+					</section>
+					
+					<section>
+						<h2>Reference States</h2>
+						<ul>
+							<li>R.S. I is unable to uniquely determine the FI of a given CI.
+							<ul style="float: right">
+								<li>more than one statically-valid solution.
+							</ul>
+							</li>
+						</ul>
+						<div class="fragment">
+							<table class="hanoi">
+								<colgroup>
+									<col style="width: 30%" />
+									<col style="width: 70%" />
+								</colgroup>
+								<tr><td>
+									<figure>
+										<img src="images/rs_ii.png" />
+										<figcaption>
+											$\iint\limits_{\partial C} \vec{f_1} \; dS + \iint\limits_{\partial C} \vec{f_2} \; dS = \vec{0}$
+										</figcaption>
+									</figure>
+								</td>
+								<td>
+									<h2 class="definition">Static Determinacy</h2>
+									<div>
+										Statically indeterminate structures must be functionally justified. <span style="float: right">Ref. State II</span>
+									</div>
+									<ul>
+										<li>The solution for static equilibrium equations is unique*.</li>
+										<li>Static indeterminacy is minimized.</li>
+									</ul>
+								</td></tr>
+							</table>
+							<ul>
+								<li>Unless necessary, or functionally justified, indeterminate static solutions are rejected.</li>
+									<ul style="float: right">
+										<li>Reduce the number of FIs to one per CI.</li>
+									</ul>
+							</ul>
+							<div class="footnote">* Given one force or moment value.</div>
+						</div>
+						<div class="override">
+							<div class="conclusion fragment zoom-out">
+								<span style="font-weight:normal">Further behavioral filtering at the interface level.</span><br />
+								Eliminate FIs that produce unnecessary static indeterminacy.
+							</div>
+						</div>
+						
+						<aside class="notes">
+							<div style="font-size: .75em" data-markdown>
+								* Ambiguity still remains in CIs having multiple statically-valid FI.
+								* **RS II** provides the necessary criterion 
+								to select the appropriate FI when multiple static solutions co-exist.
+								* This RS considers the product in operational.
+								* It asserts that all statically indeterminate configuration must be functionally justified,
+								otherwise, they are eliminated.
+								* A statically indeterminate configuration is characterized by more than one solution to the same
+								m.e.e seen earlier in RS I.
+								* Elimination of non-functional statically indeterminate interpretation leads to **one FI per CI**.
+								* **Conclusion:** This consists a second and last level filtering, leading to unique function interpretation at the interface level.
+							</div>
+						</aside>						
+					</section>
+
+					<section>
+						<table class="hanoi">
+							<colgroup>
+								<col style="width: 30%" />
+								<col style="width: 70%" />
+							</colgroup>
+							<tr><td>
+							<figure>
+								<img src="images/bolted_joint_1.png" width="45%"/>
+								<img src="images/bolted_joint_2.png" width="45%"/>
+								<figcaption>Functional groups labeled as <b>bolted junctions</b>.</figcaption>
+							</figure>
+							</td>
+							<td>
+								<h2 class="definition">Functional Group</h2>
+								<div>
+									A set of components that together deliver a coherent function or set of functions.
+								</div>
+								<ul>
+									<li>Each functional group is given a label (<em>functional cluster</em>).</li>
+									<li><em>Bolted junction</em> is an example of a functional cluster.</li>
+								</ul>
+							</td></tr>
+						</table>							
+						<table class="hanoi">
+							<colgroup>
+								<col style="width: 30%" />
+								<col style="width: 70%" />
+							</colgroup>
+							<tr><td>
+								<figure>
+									<div id="bj_cycle"></div>
+									<figcaption><b>Loads cycle</b> goes into a bolted junctions.</figcaption>
+								</figure>
+							</td>
+							<td>
+								<h2 class="definition">Force Propagation</h2>
+								<div>
+									Loads generated by an internal load generator propagate through a cycle in a functional product.
+									<span style="float: right">Ref. State III</span>
+								</div>
+								<ul style="float: left">
+									<li>A <em>threaded link</em> is a load generator.</li>
+								</ul>
+							</td></tr>
+						</table>							
+						<aside class="notes">
+							<div style="font-size: .75em" data-markdown>
+								* As mentioned earlier, another level at which the DMU must be functionally enriched for FEA purposes is the *functional group* level.
+								* A **functional group** is a set of components that collaborate together to deliver a coherent set
+								of functions.
+								* Each functional group is labelled with a *functional cluster*. A designation that defines the
+								set of functions it satisfies.
+								* An example is a *bolted junction* is a functional cluster that identifies a set of components satisfying the
+								functionality of "tightening" by means of a threaded link.
+								* A threaded link is an internal load generator, and bolted junctions are characterized by a
+								load cycle internal to the product.
+								* This leads us to RS III, that again consider the product from an operational stand point.
+								* It states that in a valid product, loads generated by a load generator, such as a threaded link,
+								propagate in a **cyclic path**.
+							</div>
+						</aside>
+					</section>
+
+					<section>
+						<h2>Internal load cycles</h2>
+						<table><tr>
+							<col width="50%" />
+							<col width="50%" />
+							<td>Force propagation graphs</td><td><li>One per direction.</li></td>
+							</tr><tr>
+							<td></td><td><li>Subgraphs of CIG.</li></td>
+						</tr></table>
+						<ul class="altpanel fragment spin-in" style="height: 1em" data-fragment-index="10">
+							<li class="alternative fragment spin-out" data-fragment-index="80">
+								FIs producing static indeterminacy are eliminated.
+							</li>
+							<li class="fragment spin-in" data-fragment-index="80">
+								<em>A load cycle</em> with a <em>threaded link</em> reveals a <em>bolted junctions</em>.
+							</li>
+						</ul>
+						<div style="width: 100%" class="altpanel">
+							<img src="images/cig_rj_sec_fi_init.png" height="480" style="float: left" class="fragment switch" data-fragment-index="10" />
+							<span>
+								<img src="images/cig_rj_sec_fi_reduced.png" height="480" style="float: left" class="fragment switch" data-fragment-index="20" />
+								<img src="images/cig_rj_sec_fi_projected.png" height="480" style="float: left" />
+						</span>
+							<div  style="position: absolute; top: 0px; left: 0px" class="fragment zoom-out" data-fragment-index="80" >
+								<img src="images/cig_rj_sec_fi_frames.png" height="480"/>
+							</div>
+							<div style="position: absolute; right: 0; top: 25">
+								<img src="images/two_bjs.png" width="400"/>
+							</div>
+							<div style="position: absolute; right: 0; top: 25" class="fragment"  data-fragment-index="10">
+								<img src="images/two_forces.png" width="400"/><br />
+								<img src="images/chy_dir.png" width="50" />
+							</div>
+						</div>
+
+						<div class="override">
+							<div class="conclusion fragment zoom-out" data-fragment-index="100">
+								Qualitative behavioral analysis led to:
+								<ul>
+									<li>Reduction of interpretations to one FI per CI.</li>
+									<li>Functional knowledge at the component group level.</li>
+								</ul>
+							</div>
+						</div>
+						<aside class="notes">
+							<div style="font-size: .75em" data-markdown>
+								* This raises the question as how to detect internal loads cycles?
+								* To answer this question, we first define a **Force Propagation Graph** on DMU components for each possible force propagation
+								direction.
+								* We know that each FPG is a sub-graph of the CIG, this is because forces can only propagate through CIs, as we only consider mechanical interactions.
+									* This puts an upper bound on the number of force propagation graphs.
+								* Now  for each force propagation direction, dictated by a load generator, we start by eliminating
+								FI that lead to statically indeterminate configurations.
+								* Next, and in order to detect a load cycle, we project the CIG onto
+								the chosen direction to produce the corresponding FPG.
+								* Now the task of detecting *bolted junctions* reduces to cycle detection in the resulting graph.
+								* **Conclusion** Using a qualitative behavioral study of the assembly led us to clarify ambiguity about the functional knowledge at the interface level, and to acquire new knowledge at the
+								functional group level.
+							</div>
+						</aside>
+					</section>
+					
+					<section>
+						<h2>Functional knowledge</h2>
+						<table class="ladder" id="meter2">
+							<tr>
+								<th />
+								<th>Form</th>
+								<th><img style="width: 200px" src="images/fonctionometer.png" /></th>
+								<th>Function</th>
+								<th />
+							</tr><tr>
+								<td>module</td>
+								<td>Group</td>
+								<td>
+									<div style="width: 200px">
+										<div class="fragment module" data-fragment-index="10">&nbsp;</div>								
+									</div>
+								</td>
+								<td>
+									<span class="fragment switch" data-fragment-index="10">?</span>
+									<span>One FC</span>
+								</td>
+								<td class="leftarrow">
+									<span>Geometry</span>
+									<span class="fragment roll-in" data-fragment-index="10"> & Behavior</span>
+								</td>
+							</tr><tr>
+								<td>unit</td>
+								<td>Component</td>
+								<td>
+									<div style="width: 200px">
+										<div class="fragment component" data-fragment-index="10">&nbsp;</div>								
+									</div>
+								</td>
+								<td>?</td>
+								<td>&nbsp;</td>
+							</tr><tr>
+								<td>interface</td>
+								<td>CI</td>
+								<td>
+									<div style="width: 200px" id="interface-full-gray">
+										<div class="fragment interface" data-fragment-index="10">&nbsp;</div>	
+									</div>
+								</td>
+								<td>
+									<span class="fragment switch" data-fragment-index="10">FIs</span>
+									<span>One FI</span>
+								</td>
+								<td class="leftarrow">
+									<span>Geometry</span>
+									<span class="fragment roll-in" data-fragment-index="10"> & Behavior</span>
+								</td>
+							</tr>
+						</table>
+						<div style="position: relative; width: 300px; height: 300px; margin: 0 auto">
+							<img src="images/milestone_1.png" width="300" class="milestone-image" />
+							<img src="images/milestone_2_df.png" width="300"
+								class="milestone-image fragment zoom-out" data-fragment-index="10" />
+						</div>
+						<aside class="notes">
+							<div style="font-size: .75em" data-markdown>
+								* If we try to position ourself with respect to the objectives: 
+									* The gap between form and function is completely bridged at two levels.
+							</div>
+						</aside>
+					</section>
+
+				</section>
+
+				<section data-state="sky" data-chapter="Rule-based inference">
+
+					<section>
+						<ul class="toc pause"></ul>
+					</section>
+
+					<section>
+						<h2>Functional unit</h2>
+						<ul>
+							<div style="float: right">
+								<img src="images/funcinfo_group.png" width="400" class="fragment push-out" data-fragment-index="70"/>
+								<img src="images/funcinfo_unknown.png" width="400" class="fragment push-in" data-fragment-index="70"/>															 
+							</div>
+							<li>Thanks to R.S. functional knowledge is available at component <em>interface</em> and component <em>group</em> levels.</li>
+							<li class="fragment" data-fragment-index="70">
+								<b>Objective</b> Use this knowledge to functionally classify <em>components</em>.
+							</li>
+						</ul>
+						<div class="fragment flip-in" data-fragment-index="80"><table class="hanoi">
+							<colgroup>
+								<col style="width: 30%" />
+								<col style="width: 70%" />
+							</colgroup>
+							<tr><td>
+								<figure>
+									<img src="images/capscrew_fd.png" />
+									<figcaption>
+									<b>Cap-screw</b> as an FD.
+									</figcaption>
+								</figure>
+							</td>
+							<td>
+								<h2 class="definition">Functional Designation</h2>
+								<div>
+									An FD is a denomination that functionally identifies a class of a component.</span>
+								</div>
+								<ul style="margin-top: -.5em">
+									<li>Relates the functionality to geometry through <em>FIs</em> and to assembly through <em>FCs</em>.</li>
+								</ul>
+							</td></tr>
+						</table></div>
+						<aside class="notes">
+							<div style="font-size: .75em" data-markdown>
+								* Now that functional knowledge is available in a non-ambiguous
+								manner at two levels...
+								* The objective shifts in this part to utilize this knowledge to functionally enrich components themselves.
+								* To this end we define the concept of functional designation which is a label put on a given component to uniquely
+								identify its function.								
+								* FDs are not only mere textual annotations of components, they tightly link components to other
+								functional entities in the DMU, particularly FIs at the interface level and
+								FC at the component group level, as we will see shortly.
+							</div>
+						</aside>
+					</section>
+
+					<section>
+						<ul>
+							<li><b>Observations</b>
+								<ul>
+									<li>Function of a component is related to functions of its interfaces and functional groups.</li>
+									<li>Vast and dynamic diversity of component function.</li>
+								</ul>
+							</li>
+						</ul>
+						<figure>
+							<img src="images/fd_tax.png" height="400"/>
+							<figcaption>
+								FDs are organized in a taxonomy that can be <em>domain-specific</em>.
+							</figcaption>
+						</figure>
+						<ul>
+							<li>FDs need to be <em>represented formally</em>, and reasoned upon with <em>dynamic rules</em>.
+						</ul>
+						<div class="override">
+							<div class="conclusion fragment zoom-out">
+								<ul>
+									<li>How to represent functional knowledge?</li>
+									<li>How to process functional knowledge?</li>
+								</ul>
+							</div>
+						</div>
+						<aside class="notes">
+							<div style="font-size: .75em" data-markdown>
+								* First observation in this regard is that we cannot tell the function of a component by looking at it alone!
+								Functionality of a component is determined in light of functional interfaces and the functional
+								groups it participates to.
+								* Another important observation is the dynamic nature of component functions. Indeed, the set of 
+								functional designation that we may describe depends on the underling domain such aeronautics or automotive industries.
+								* This knowledge can be captured in a hierarchical structure in what is referred to as FD taxonomies.
+								* It needs to be represented formally, yet in a dynamic and adaptive manner!
+								* **Conclusion** So far we've been only "collecting" knowledge, now we need to consider the question as how to represent, and process functional knowledge?
+							</div>
+						</aside>
+
+					</section>
+
+					<section>
+						<div>
+							<h2>Functional knowledge representation</h2>
+							<h3>Knowledge-based engineering (KBE)</h3>
+							<ul class="ladder">
+								<li>Engineering-oriented expert systems, bottom-up approaches <cite>Chapman&nbsp;'01, La Rocca&nbsp;'07, Emberey&nbsp;'07</cite>.</li>
+								<li>
+									KBE adds up to CAD systems, without changing them.
+									<ul><li><em>CAD models remain unchanged!</em></li></ul>
+								</li>
+								<li>
+									Procedural programming. Native representation.
+									<ul ><li><em>Poor semantic formalism!</em></li></ul>
+								</li>
+							</ul>
+						</div>
+						<div class="fragment">
+							<h3>Ontologies</h3>
+							<ul class="ladder">
+								<li>Formal semantics based on the Semantic Web paradigm.</li>
+								<li>
+									Borrowed into assembly knowledge representation <cite>Rahmani&nbsp;'12, Kitamura&nbsp;'03</cite> and reasoning <cite>Kim&nbsp;'06</cite>.
+									<ul><li><em>No significant application in functional reasoning, yet!</em></li></ul>
+								</li>
+							</ul>
+						</div>
+						<aside class="notes">
+							<div style="font-size: .75em" data-markdown>
+								* To answer to this question we first take a look at what the literature offers.
+								* A common approach is Knowledge-Based Engineering (KBE) that emphasizes reuse by making knowledge available to designers.
+									* On drawback is that KBE systems add up to CAD systems
+										* Technological and functional information is not necessarily related to their respective geometric sets, since geometry is left intact.
+									* Another inconvenience is the use of procedural and object-oriented programming approaches are static and do not allow generic rules.
+									* Native representation languages hinder knowledge sharing.
+								* Ontologies: well-defined formalism. Generic purpose, cross-domain knowledge repositories.
+									* Existing methods didn't go beyond consistency checks, and DoF reduction when it comes to reasoning using ontologies.
+							</div>
+						</aside>
+					</section>
+
+					<section>
+						<h2>Functional knowledge reasoning</h2>
+						<ul>
+							<li>A <em>cap-screw</em> is a <em>component</em> that has a <em>threaded link</em> and a <em>planar support</em>, and that participates to a <em>bolted junction</em>*.</li>
+							<li class="fragment" data-fragment-index="10">
+								In First Order Logic (FOL):
+								<span style="float: right; color: red; font-weight: bold" class="fragment zoom-out" data-fragment-index="20">Undecidable!</span>
+							</li>
+							<div style="font-size: .5em" class="fragment" data-fragment-index="10">
+								$$
+								\begin{array}{llll}
+								Capscrew \leftarrow & Component(x) && \land \\
+								& ThreadedLink(i) &\land \; forms(x, i) & \land \\
+								& PlanarSupport(j) &\land \; forms(x, j) & \land \\
+								& BoltedJoint(b) &\land \; participatesTo(x, b) &
+								\end{array}
+								$$
+							</div>
+							<li class="fragment" data-fragment-index="30">
+								In Description Logic (DL):
+								<span style="float: right; color: green; font-weight: bold" class="fragment zoom-out" data-fragment-index="40">Decidable.</span>
+							</li>
+							<div style="font-size: .5em" class="fragment" data-fragment-index="30">
+								$$
+								\begin{array}{>{\sf}l>{\sf}l>{\sf}l}
+								\sf Capscrew \sqsupseteq 
+								 & \sf Component & \sqcap \\
+								 & \exists \sf forms.ThreadedLink & \sqcap \\
+								 & \exists \sf forms.PlanarSupport & \sqcap \\
+								 & \exists \sf participatesTo.BoltedJoint & \sqcap
+								\end{array}
+								$$
+							</div>
+							<li class="fragment" data-fragment-index="50">
+								<b>OWL DL</b> is an <em>ontology language</em> that supports <em>DL reasoning</em>.
+							</li>
+							<li class="fragment" data-fragment-index="60">
+								DL-reasoning engines with well-established algorithmic behavior (Pellet, FaCT++, Racer, ect.).
+							</li>
+
+						</ul>
+						<div class="footnote">* Simplified from the real rule in use to identify cap-screws.</div>
+						<aside class="notes">
+							<div data-markdown>
+								* However, in our work, more than consistency checks is needed.
+								* An example, simplified, rule defining a capscrew.
+								* The rule shows the tight connection between functionality at the component level, and that
+								at the functional interface and functional group level.
+								* This rule can be stated in FOL, however, this formalism is proven to be undecidable.
+								* The same rule can also be stated using Description Logic, which has the advantage of being decidable.
+								* Another advantage is that commercial and open-source DL-reasoners implement algos. with well-established computational behavior.
+								* DL is supported by the ontology language OWL DL. Which makes it a natural choice to our requirements.
+							</ul>
+						</aside>
+					</section>
+					
+					<section>
+						<h2>Captured knowledge</h2>
+						<ul>
+							<li>The <em><code>romma</code></em> ontology to capture domain knowledge.</li>
+							<li>Model knowledge is <em>instantiated</em> against <code>romma</code> concepts and instances are assigned to their respective geometric entities.</li>
+						</ul>
+						<table class="hanoi" width="100%" style="margin-top: 25px">
+							<col width="50%" />
+							<col width="50%" />
+						<tr>
+							<td>
+								<figure>
+									<img src="images/rj_ont_ann.png"/>
+									<figcaption>
+										Model Knowledge
+									</figcaption>
+								</figure>
+							</td>
+							<td>
+								<figure>
+									<img src="images/rj_mini_ont.png"/>
+									<figcaption>
+										Domain Knowledge
+									</figcaption>
+								</figure>
+							</td>
+						</tr></table>
+						<aside class="notes">
+							<ul>
+								<li>Now that the choice of tools is made...</li>
+								<li><code>romma</code> ontology is defined in <b>OWL DL</b> to capture domain knowledge.</li>
+								<li>Knowledge about a given assembly model is instantiated against concepts of this ontology.</li>
+								<li>Instances of model knowledge are attached to their respective precise geometric elements.</li>
+							</ul>
+						</aside>
+					</section>
+
+					<section>
+						<h2>Ontological reasoning</h2>
+						<ul>
+							<li>Ontology <code>romma</code> is submitted to DL reasoner.</li>
+							<li>CIG is translated into DL fact, which are posted to reasoner.</li>
+						</ul>
+						<table class="hanoi" style="width: 100%"><tr>
+							<th style="width: 430px" />
+							<th style="width: 95px" />
+							<th style="width: 430px" />
+						</tr><tr>
+							<td style="border-left: 1px solid black; border-right: 1px solid black; border-top: 1px solid black">
+								<img src="images/expl_tb.png" class="fragment push-out" width="400px" data-fragment-index="20"/>
+								<img src="images/expl_geo.png" class="fragment push-in" width="400px" data-fragment-index="20"/>
+							</td>
+							<td class="fragment" data-fragment-index="10">
+								<small class="fragment fade-out" data-fragment-index="20" style="background: url(images/icons/rightarrow_xs.png) no-repeat center">
+									DIG protocol
+								</small>
+							</td>
+							<td style="border-left: 1px solid black; border-right: 1px solid black; border-top: 1px solid black">
+								<span class="fragment" data-fragment-index="10">
+									<img src="images/expl_tb.png" class="fragment push-out" width="400px" data-fragment-index="40"/>
+									<img src="images/expl_tb_resolved.png" class="fragment push-in" width="400px" data-fragment-index="40"/>
+								</span>
+							</td>
+						</tr><tr>
+							<td style="border-left: 1px solid black; border-right: 1px solid black; padding-left: 20px; padding-right: 20px">
+								<div style="background: url(images/icons/downarrow_xs.png) no-repeat center; font-size: .5em; height: 50px" class="fragment" data-fragment-index="20">
+									Geometric and behavioral module
+								<div/>
+							</td>
+							<td></td>
+							<td style="border-left: 1px solid black; border-right: 1px solid black; padding-left: 20px; padding-right: 20px">
+								<img src="images/icons/gears.gif" width="50" class="fragment" data-fragment-index="40" style="float: left" />
+								<span style="float: right; font-size: .5em">Reasoner</span>
+							</td>
+						</tr><tr>
+							<td style="border-left: 1px solid black; border-right: 1px solid black; border-bottom: 1px solid black" >
+								<img src="images/expl_cig.png" class="fragment" width="400px" data-fragment-index="20" />
+							</td>
+							<td class="fragment" data-fragment-index="30">
+								<small class="fragment" data-fragment-index="30" style="background: url(images/icons/rightarrow_xs.png) no-repeat center">
+									DIG protocol
+								</small>
+							</td>
+							<td style="border-left: 1px solid black; border-right: 1px solid black; border-bottom: 1px solid black" class="fragment" data-fragment-index="30">
+								<img src="images/expl_ab.png" class="fragment push-out" width="400px" data-fragment-index="40" />
+								<img src="images/expl_ab_resolved.png" class="fragment push-in" width="400px" data-fragment-index="40" />
+							</td>
+						</tr></table>
+						<div class="override">
+							<div class="conclusion fragment zoom-out">
+								Components are functionally <em>enriched</em> down to the interface level, and geometrically <em>restructured</em> accordingly.								
+							</div>
+						</div>
+						<aside class="notes">
+							<ul>
+								<li>Connection is made to a DL reasoner through DIG protocol.</li>
+								<li>Domain ontology is submitted to the reasoning server.</li>
+								<li>CIG is translated into DL fact, which are posted to reasoner.</li>
+								<li>Reasoners are inquired about FDs. Matches are found.</li>
+								<li><b>Conclusion:</b> At this stage
+								functional units, i.e. components, are enriched with functional knowledge down to the interface level,
+								after they've been geometrically restructure to this end.  
+							</ul>
+						</aside>
+					</section>
+					
+					<section>
+						<h2>Results</h2>
+						<figure style="position: relative">
+							<div style="position: absolute; top: 0px; right: 15px; font-size: .75em; text-align: right">
+								Total time: 16.54 sec<br />
+								<small>Intel&#0169; Core&#0153;2 Duo CPU P8600 @ 2.40GHz<br />
+								4GB memory</small><br />
+								<img src="images/pumptest.png" width="250"/>
+							</div>
+							<img src="images/pump_results.png" />
+							<figcaption>
+								Successful detection of <em>6</em> different <em>FDs</em> on an example of a centrifugal pump.
+							</figcaption>
+						</figure>
+					</section>
+										
+					<section>
+						<h2>Results</h2>
+						<figure style="position: relative">
+							<div style="position: absolute; top: 0px; right: 15px; font-size: .75em; text-align: right">
+								Total time: 20.68 sec<br />
+								<small>Intel&#0169; Core&#0153;2 Duo CPU P8600 @ 2.40GHz<br />
+								4GB memory</small><br />
+								<img src="images/rjtest.png" width="250"/>
+							</div>
+							<img src="images/rj_results.png" />
+							<figcaption>
+								Successful detection of <em>cap-screws</em>, <em>nuts</em>, and <em>locking nuts</em> on an industrial example of root joint.
+							</figcaption>
+						</figure>
+					</section>
+					
+					<section>
+						<h2>Complete connection</h2>
+						<table class="ladder" id="meter3">
+							<tr>
+								<th />
+								<th>Form</th>
+								<th><img style="width: 200px" src="images/fonctionometer.png" /></th>
+								<th>Function</th>
+								<th />
+							</tr><tr>
+								<td>module</td>
+								<td>Group</td>
+								<td>
+									<div style="width: 200px">
+										<div class="fragment module" data-fragment-index="10">&nbsp;</div>								
+									</div>
+								</td>
+								<td>One FC</td>
+								<td class="leftarrow">
+									<span>Geometry & Behavior</span>
+								</td>
+							</tr><tr>
+								<td>unit</td>
+								<td>Component</td>
+								<td>
+									<div style="width: 200px">
+										<div class="fragment component" data-fragment-index="10">&nbsp;</div>								
+									</div>
+								</td>
+								<td>
+									<span class="fragment switch" data-fragment-index="10">?</span>
+									<span>One FD</span>
+								</td>
+								<td class="leftarrow fragment" data-fragment-index="10">
+									<span class="fragment roll-in" data-fragment-index="10">
+										Expert Rules
+									</span>
+								</td>
+							</tr><tr>
+								<td>interface</td>
+								<td>CI</td>
+								<td>
+									<div style="width: 200px">
+										<div class="fragment interface" data-fragment-index="10">&nbsp;</div>	
+									</div>
+								</td>
+								<td>One FI</td>
+								<td class="leftarrow">
+									<span>Geometry & Behavior</span>
+								</td>
+							</tr>
+						</table>
+						<div style="position: relative; width: 300px; height: 300px; margin: 0 auto">
+							<img src="images/milestone_1.png" width="300" class="milestone-image" />
+							<img src="images/milestone_2_df.png" width="300" class="milestone-image" />
+							<img src="images/milestone_3_df.png" width="300"
+								class="milestone-image fragment zoom-out" data-fragment-index="10" />
+						</div>
+						<aside class="notes">
+							<div data-markdown>
+								At this stage:
+								* The information gap has been completely bridged between form and function.
+								* Producing a reliable functional knowledge about the assembly that connects to concrete
+								structural and geometric elements.
+							</div>
+						</aside>
+					</section>
+
+				</section>
+				
+				<section data-state="sand">
+					<section>
+						<h2>Template-based preprocessing of DMU for FEA purposes.</h2>
+						<ul>
+							<li>Highly automated geometric pre-processing method, feeds on functional information of the DMU <cite>Boussuge <i>et al.</i>&nbsp;'14</cite>.</li>
+						</ul>
+						<div class="fragment flip-in" data-fragment-index="10">
+							<table class="hanoi">
+								<col />
+								<col />					
+							<tr>
+							<td>
+								<img src="images/bj_imprints_1.png" style="width: 400px" class="fragment push-out"  data-fragment-index="20"/>
+								<img src="images/bj_imprints_2.png" style="width: 400px" class="fragment push"  data-fragment-index="20"/>
+								<img src="images/bj_imprints_3.png" style="width: 400px" class="fragment push"  data-fragment-index="30"/>
+								<img src="images/bj_imprints_4.png" style="width: 400px" class="fragment push-in"  data-fragment-index="40"/>
+							</td>
+							<td>
+								<ul style="line-height: 1">
+									<li>Templates are matched to functional groups (<em>bolted junction</em>).</li>
+									<li class="fragment" data-fragment-index="20">Elements of templates are mapped to components (<em>cap-screw</em>, <em>nut</em>, <em>locking nut</em>).
+									<li class="fragment" data-fragment-index="40">Sub-domains are defined based on FIs.</li>
+								</ul>
+							</td>
+							</tr></table>
+							<img src="images/template_based_1.png" width="100%" class="fragment push-out" data-fragment-index="20"/>
+							<img src="images/template_based_2.png" width="100%" class="fragment push" data-fragment-index="20"/>
+							<img src="images/template_based_3.png" width="100%" class="fragment push" data-fragment-index="30"/>
+							<img src="images/template_based_4.png" width="100%" class="fragment push" data-fragment-index="40"/>
+							<img src="images/template_based_5.png" width="100%" class="fragment push-in" data-fragment-index="50"/>
+						</div>
+						<div class="override">
+							<div class="conclusion fragment zoom-out"data-fragment-index="100">
+								Reduction of preparation time <br />from 5 man-days to 1 hour!
+							</div>
+						</div>
+						<aside class="notes">
+							<div data-markdown>
+								* A direct application of the proposed approach is introduced by Boussuge et al. in the frame of ROMMA project.
+								* It is a highly automated geometric pre-processing method for FE
+								simulation purposes...
+								* based on template matching.
+									* For example, a special template is matches to functional groups labelled as *bolted junctions*.
+								* Locker nuts are then recognized, thanks to their Functional Designations, and removed, as the template implies.
+								* Components bound by a threaded link, such as the capscrew and the nut in this example, are replaced by a single object.
+								* Interaction zones are then used to define sub-domains, such as those around loose fit contacts.
+								* This leads to the generation of the adequate simulation model.
+								* **Conclusion:** This collaboration reduced the preparation time from 5 man-days to only one hour!
+							</div>
+						</aside>
+					</section>
+				</section>
+				
+				<section data-state="sky" data-chapter="Conclusions and Perspectives">
+					<section>
+						<ul class="toc pause"></ul>
+					</section>
+					
+					<section data-background="images/squares.png" data-background-size="700px">
+						<h2>Conclusions</h2>
+						<ul>
+							<li>Geometric <b>restructuring</b> of components.
+							<ul>
+								<li><em>CIs</em>: components bear imprints of functional zones.</li>
+								<li><em>FIs</em>: functionality stems at the interface level.</li>
+							</ul>
+							</li>
+							<li class="fragment">Structural <b>re-organization</b> of the DMU.
+							<ul>
+								<li><em>CIG</em>: capturing functional interaction between components in a graph structure.</li>
+								<li><em>FCs</em>: grouping functionally related components in sub-graphs.</li>
+							</ul>
+							</li>
+							<li class="fragment">Use <b>behavior</b> to unambiguously bind form to function.
+							<ul>
+								<li><em>RSs</em>: qualitative behavioral assessment of function.</li>
+							</ul>
+							</li>
+							<li class="fragment">Apply <b>rule-based</b> inference to connect the dots.
+							<ul>
+								<li><em>FDs</em>: match functional patterns to restructured components.</li>
+							</ul>
+							</li>
+						</ul>
+						<aside class="notes">
+							<div data-markdown>
+								In conclusion
+								* Components geometry has been **restructured** with respect to function:
+									* Geometric interactions between components have been precisely defined, components now bear imprints of those interactions thanks to their *CIs*.
+									* Those interactions were functionally determined, each CI was assigned to a unique FI.
+								* The DMU itself has been **reorganized** in a functionally relevant graph:
+									* This is the *CIG*.
+									* Components were grouped into subgraphs labelled as functional clusters.
+								* To this end we implemented a **qualitative behavioral** assessment of function in a mechanical context.
+									* Through *RSs*.
+								* We also applied a **rule-based** inference to coplete the functional picture.
+									* Building an ontology of *FDs*.
+							</div>
+						</aside>
+					</section>		
+
+					<section data-background="images/circles.png" data-background-size="700px">
+						<h2>Perspectives</h2>
+						<ul>
+							<li>Other applications rather that FEA:
+							<ul>
+								<li>Virtual and augmented reality.</li>
+								<li>Assembly/Disassembly planning.</li>
+							</ul>
+							</li>
+							<li class="fragment">Future work direction:
+							<ul>
+								<li>Take into account symmetry and repetitive geometries.</li>
+								<li>Implement and introduce new reference states, such as kinematic chains.</li>
+								<li>Extend existing ontology by defining new FDs and their rules. 
+							</ul>
+							</li>
+						</ul>
+						<aside class="notes">
+							<div data-markdown>
+								* Other applications
+									* Even though emphasize has been put solely on FEA preprocessing,
+									other application can also be considered with minimal modifications to the proposed approach.
+									* Examples are virtual and augmented reality where functional and
+									kinematic information can be used to enhance simulations of
+									physical phenomena.
+								* Future work directions include
+									* The enhancement of execution time
+									by considering repetitive geometries and symmetries to avoid redundant reasoning.
+									* The implementation of other reference states that account for the
+									violation of one or more of the global hypotheses, such as friction and deformation.
+									* The extension of current ontology by adding more rules to recognize new functional designations.								
+							</div>
+						</aside>
+					</section>
+				</section>
+
+				<section data-state="sand">
+					<section>
+						<h2 style="margin-bottom: 100px; margin-top: 75px">Thank you.</h2>
+						<table class="hanoi"><tr>
+							<td><img src="images/logos/anr.png" width="150px" /></td>
+							<td><img src="images/logos/logo_g-scop.png" width="150px" /></td>
+							<td><img src="images/logos/inpg.png" width="150px" /></td>
+						</tr><tr>
+							<td><img src="images/logos/grenoble_univ.png" width="100px" /></td>
+							<td><img src="images/logos/logo_imagine.png" width="150px" /></td>
+							<td><img src="images/logos/logo_ljk.png" width="100px" /></td>
+						</tr></table>
+						<div style="text-align: right; width: 100%" class="fragment">
+							<ul style="text-align: right; list-style-position: inside; font-size: .5em; line-height: 1.2; width: 100%">
+								<li><a href="?print-pdf">Printable version</li>
+								<li><a href="http://pagesperso.g-scop.grenoble-inp.fr/~shahwana/phd/defense/">Available online</li>
+							</ul>
+						</div>
+					</section>				
+				</section>
+
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/defense.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: false,
+				progress: true,
+				history: true,
+				center: true,
+				slideNumber: false,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+		<script type="text/javascript" src="js/phd.js"></script>
+
+	</body>
+</html>

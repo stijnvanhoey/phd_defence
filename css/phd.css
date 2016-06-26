@@ -1,0 +1,369 @@
+.downarrow {
+	background: url('../images/icons/downarrow_xs.png') no-repeat;
+	background-position: center;
+}
+
+.uparrow {
+	background: url('../images/icons/uparrow_xs.png') no-repeat;
+	background-position: center;
+}
+
+.leftarrow {
+	background: url('../images/icons/leftarrow_xs.png') no-repeat;
+	background-position: center;
+}
+
+.rightarrow {
+	background: url('../images/icons/rightarrow_xs.png') no-repeat;
+	background-position: center;
+}
+
+.funcspan {
+	width:50px;
+	height:400px;
+}
+
+.reveal td.vertical {
+	font-size: .5em;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-right: 0px;
+  padding-left: 0px;
+	margin: 0;
+	-webkit-transform: rotate(90deg);
+	   -moz-transform: rotate(90deg);
+	    -ms-transform: rotate(90deg);
+	     -o-transform: rotate(90deg);
+	        transform: rotate(90deg);
+}
+
+.reveal table.screwvalue {
+	border: 0px;
+}
+
+.reveal table.screwvalue td:nth-child(1) {
+	text-align: right;
+	border: 0px;
+}
+
+.reveal table.screwvalue td:nth-child(2) {
+	text-align: center;
+	border: 0px;
+}
+
+.reveal table.screwvalue td:nth-child(3) {
+	text-align: left;
+	border: 0px;
+}
+
+.reveal table.cayley {
+	border-collapse:collapse;
+}
+
+.reveal table.cayley td:nth-child(1) {
+	border-right: 1px solid black;
+}
+
+.reveal table.cayley td {
+	text-align: center;
+}
+
+
+.reveal table.cayley tr:nth-child(1) {
+	border-bottom: 1px solid black;
+}
+
+.reveal blockquote {
+	background-image: url('../images/icons/quote_symbol.png');
+	background-repeat: no-repeat;
+	min-height: 50px;
+}
+
+.reveal table.ladder {
+	font-size: .75em;
+}
+
+.reveal table.ladder tr th {
+	font-weight: bold;
+	text-align: center;
+}
+
+.reveal table.ladder tr td:first-child {
+	text-align: center;
+	padding-left: 20px;
+	font-weight: bold;
+}
+
+.reveal table.ladder tr td:last-child {
+	text-align: left;
+	padding-left: 50px;
+	width: 300px;
+	background-position: left center;
+}
+
+.reveal table.ladder tr td:nth-child(3) {
+	vertical-align: middle;
+}
+
+.reveal table.ladder div {
+	border-radius: 10px;
+	height: 20px;
+	border: solid 1px black;
+           
+	background: -moz-linear-gradient(top,  rgba(128,128,128,0.25) 0%, rgba(128,128,128,0) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(128,128,128,0.25)), color-stop(100%,rgba(128,128,128,0))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(128,128,128,0.25) 0%,rgba(128,128,128,0) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(128,128,128,0.25) 0%,rgba(128,128,128,0) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(128,128,128,0.25) 0%,rgba(128,128,128,0) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(128,128,128,0.25) 0%,rgba(128,128,128,0) 100%); /* W3C */
+
+}
+
+.reveal table.ladder div.fragment {
+	border-radius: 10px;
+	border: none;
+	height: 100%;
+	-webkit-transition: width 1200ms cubic-bezier(0, 0.860, 1, 0.985);
+      -moz-transition: width 1200ms cubic-bezier(0, 0.860, 1, 0.985);
+       -ms-transition: width 1200ms cubic-bezier(0, 0.860, 1, 0.985);
+        -o-transition: width 1200ms cubic-bezier(0, 0.860, 1, 0.985);
+           transition: width 1200ms cubic-bezier(0, 0.860, 1, 0.985);
+}
+
+.reveal .slides section .module,
+.reveal .slides section .interface,
+.reveal .slides section .component {
+	opacity: 1;
+	display: block;
+	background-color: rgb(122,188,255);
+	background: -moz-linear-gradient(top, rgba(122,188,255,1) 0%, rgba(64,150,238,1) 100%); 
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(122,188,255,1)), color-stop(100%,rgba(64,150,238,1))); 
+	background: -webkit-linear-gradient(top, rgba(122,188,255,1) 0%,rgba(64,150,238,1) 100%);
+	background: -o-linear-gradient(top, rgba(122,188,255,1) 0%,rgba(64,150,238,1) 100%);
+	background: -ms-linear-gradient(top, rgba(122,188,255,1) 0%,rgba(64,150,238,1) 100%);
+	background: linear-gradient(to bottom, rgba(122,188,255,1) 0%,rgba(64,150,238,1) 100%);
+}
+
+.reveal .slides section #meter1 .fragment.module {
+	background-color: blue;
+	width: 0;
+}
+
+.reveal .slides section #meter1 .fragment.module.visible {
+	width: 20%;
+}
+
+.reveal .slides section #meter1 .fragment.interface {
+	background: -moz-linear-gradient(top,  rgba(128,128,128,0.5) 0%, rgba(128,128,128,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(128,128,128,0.5)), color-stop(100%,rgba(128,128,128,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(128,128,128,0.5) 0%,rgba(128,128,128,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(128,128,128,0.5) 0%,rgba(128,128,128,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(128,128,128,0.5) 0%,rgba(128,128,128,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(128,128,128,0.5) 0%,rgba(128,128,128,1) 100%); /* W3C */
+	width: 0;
+}
+
+.reveal .slides section #meter1 .fragment.interface.visible {
+	width: 100%;
+}
+
+.reveal .slides section #meter1 .fragment.component {
+	width: 0%;
+}
+
+.reveal .slides section #meter2 .fragment.module  {
+	width: 20%;
+}
+
+.reveal .slides section #meter2 .fragment.module.visible {
+	width: 100%;
+}
+
+.reveal .slides section div#interface-full-gray   {
+	background: -moz-linear-gradient(top,  rgba(128,128,128,0.5) 0%, rgba(128,128,128,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(128,128,128,0.5)), color-stop(100%,rgba(128,128,128,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(128,128,128,0.5) 0%,rgba(128,128,128,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(128,128,128,0.5) 0%,rgba(128,128,128,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(128,128,128,0.5) 0%,rgba(128,128,128,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(128,128,128,0.5) 0%,rgba(128,128,128,1) 100%); /* W3C */
+	width: 100%;
+}
+
+.reveal .slides section #meter2 .fragment.interface  {
+	width: 0%;
+}
+
+.reveal .slides section #meter2 .fragment.interface.visible {
+	width: 100%;
+}
+
+.reveal .slides section #meter2 .fragment.component {
+	width: 0%;
+}
+
+.reveal .slides section #meter3 .fragment.interface,
+.reveal .slides section #meter3 .fragment.module  {
+	width: 100%;
+}
+
+.reveal .slides section #meter3 .fragment.component {
+	width: 0;
+}
+
+.reveal .slides section #meter3 .fragment.component.visible {
+	width: 100%;
+}
+
+@-webkit-keyframes bj_cycle {
+	0% {
+		background-image: url(../images/bj_cycle_0.png);
+	}
+	5% {
+		background-image: url(../images/bj_cycle_1.png);
+	}
+	10% {
+		background-image: url(../images/bj_cycle_2.png);
+	}
+	15% {
+		background-image: url(../images/bj_cycle_3.png);
+	}
+	20% {
+		background-image: url(../images/bj_cycle_4.png);
+	}
+	25% {
+		background-image: url(../images/bj_cycle_5.png);
+	}
+	40% {
+		background-image: url(../images/bj_cycle_6.png);
+	}
+	55% {
+		background-image: url(../images/bj_cycle_7.png);
+	}
+	70% {
+		background-image: url(../images/bj_cycle_8.png);
+	}
+	85% {
+		background-image: url(../images/bj_cycle_9.png);
+	}
+	100% {
+		background-image: url(../images/bj_cycle_0.png);
+	}
+}
+
+@keyframes bj_cycle {
+	0% {
+		background-image: url(../images/bj_cycle_0.png);
+	}
+	5% {
+		background-image: url(../images/bj_cycle_1.png);
+	}
+	10% {
+		background-image: url(../images/bj_cycle_2.png);
+	}
+	15% {
+		background-image: url(../images/bj_cycle_3.png);
+	}
+	20% {
+		background-image: url(../images/bj_cycle_4.png);
+	}
+	25% {
+		background-image: url(../images/bj_cycle_5.png);
+	}
+	40% {
+		background-image: url(../images/bj_cycle_6.png);
+	}
+	55% {
+		background-image: url(../images/bj_cycle_7.png);
+	}
+	70% {
+		background-image: url(../images/bj_cycle_8.png);
+	}
+	85% {
+		background-image: url(../images/bj_cycle_9.png);
+	}
+	100% {
+		background-image: url(../images/bj_cycle_0.png);
+	}
+}
+
+.reveal #bj_cycle {
+	height: 270px;
+	background-size: 200px 300px;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-image: url(../images/bj_cycle_4.png);
+
+	-webkit-animation: bj_cycle 10s cubic-bezier(1.000, 0.005, 0.895, 0.010) 0s infinite;
+	        animation: bj_cycle 10s cubic-bezier(1.000, 0.005, 0.895, 0.010) 0s infinite;
+}
+
+.reveal .milestone-image {
+	margin-top: 50px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+.reveal #milestone_0_n.fragment {
+	-webkit-transform: translate(0px, 95px);
+	   -moz-transform: translate(0px, 95px);
+	    -ms-transform: translate(0px, 95px);
+	     -o-transform: translate(0px, 95px);
+	        transform: translate(0px, 95px);
+}
+
+.reveal #milestone_0_s.fragment {
+	-webkit-transform: translate(0px, -95px);
+	   -moz-transform: translate(0px, -95px);
+	    -ms-transform: translate(0px, -95px);
+	     -o-transform: translate(0px, -95px);
+	        transform: translate(0px, -95px);
+}
+
+.reveal #milestone_0_e.fragment {
+	-webkit-transform: translate(-110px, 0px);
+	   -moz-transform: translate(-110px, 0px);
+	    -ms-transform: translate(-110px, 0px);
+	     -o-transform: translate(-110px, 0px);
+	        transform: translate(-110px, 0px);
+}
+
+.reveal #milestone_0_w.fragment {
+	-webkit-transform: translate(110px, 0px);
+	   -moz-transform: translate(110px, 0px);
+	    -ms-transform: translate(110px, 0px);
+	     -o-transform: translate(110px, 0px);
+	        transform: translate(110px, 0px);
+}
+
+.reveal #milestone_0_n.fragment.visible {
+	-webkit-transform: translate(0px, 0px);
+	   -moz-transform: translate(0px, 0px);
+	    -ms-transform: translate(0px, 0px);
+	     -o-transform: translate(0px, 0px);
+	        transform: translate(0px, 0px);
+}
+
+.reveal #milestone_0_s.fragment.visible {
+	-webkit-transform: translate(0px, 0px);
+	   -moz-transform: translate(0px, 0px);
+	    -ms-transform: translate(0px, 0px);
+	     -o-transform: translate(0px, 0px);
+	        transform: translate(0px, 0px);
+}
+
+.reveal #milestone_0_e.fragment.visible {
+	-webkit-transform: translate(0px, 0px);
+	   -moz-transform: translate(0px, 0px);
+	    -ms-transform: translate(0px, 0px);
+	     -o-transform: translate(0px, 0px);
+	        transform: translate(0px, 0px);
+}
+
+.reveal #milestone_0_w.fragment.visible {
+	-webkit-transform: translate(0px, 0px);
+	   -moz-transform: translate(0px, 0px);
+	    -ms-transform: translate(0px, 0px);
+	     -o-transform: translate(0px, 0px);
+	        transform: translate(0px, 0px);
+}
