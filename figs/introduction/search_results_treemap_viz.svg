@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with matplotlib (http://matplotlib.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   height="909.61682"
+   version="1.1"
+   viewBox="0 0 803.95074 727.69346"
+   width="1004.9384"
+   id="svg4917"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="search_results_treemap_viz.svg">
+  <metadata
+     id="metadata4971">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1865"
+     inkscape:window-height="1056"
+     id="namedview4969"
+     showgrid="false"
+     inkscape:zoom="0.6180637"
+     inkscape:cx="440.8052"
+     inkscape:cy="351.58761"
+     inkscape:window-x="55"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg4917"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     showguides="true"
+     inkscape:guide-bbox="true" />
+  <defs
+     id="defs4919"
+     style="stroke-linecap:butt;stroke-linejoin:round">
+    <style
+       type="text/css"
+       id="style4921">
+*{stroke-linecap:butt;stroke-linejoin:round;}
+  </style>
+    <clipPath
+       id="p68ad265ad8-9">
+      <rect
+         height="669.59998"
+         width="669.59998"
+         x="108"
+         y="86.400002"
+         id="rect4967-6"
+         style="stroke-linecap:butt;stroke-linejoin:round" />
+    </clipPath>
+  </defs>
+  <g
+     id="patch_2"
+     style="stroke-linecap:butt;stroke-linejoin:round"
+     transform="translate(-109.339,-26.967556)">
+    <path
+       clip-path="url(#p68ad265ad8)"
+       d="m 109.339,754.661 504.118,0 0,-386.197 -504.118,0 z"
+       style="fill:#a6cee3;stroke-linecap:butt;stroke-linejoin:round"
+       id="path4929"
+       inkscape:connector-curvature="0" />
+  </g>
+  <g
+     id="patch_3"
+     style="stroke-linecap:butt;stroke-linejoin:round"
+     transform="translate(-109.339,-26.967556)">
+    <path
+       clip-path="url(#p68ad265ad8)"
+       d="m 109.339,365.785 504.118,0 0,-278.0458 -504.118,0 z"
+       style="fill:#ffffff;stroke-linecap:butt;stroke-linejoin:round"
+       id="path4932"
+       inkscape:connector-curvature="0" />
+  </g>
+  <g
+     id="patch_4"
+     style="stroke-linecap:butt;stroke-linejoin:round"
+     transform="translate(-109.339,-26.967556)">
+    <path
+       clip-path="url(#p68ad265ad8)"
+       d="m 616.135,754.661 160.126,0 0,-359.623 -160.126,0 z"
+       style="fill:#1f78b4;stroke-linecap:butt;stroke-linejoin:round"
+       id="path4935"
+       inkscape:connector-curvature="0" />
+  </g>
+  <g
+     id="patch_5"
+     style="stroke-linecap:butt;stroke-linejoin:round"
+     transform="translate(-109.339,-26.967556)">
+    <path
+       clip-path="url(#p68ad265ad8)"
+       d="m 616.135,392.36 160.126,0 0,-304.6208 -160.126,0 z"
+       style="fill:#ffffff;stroke-linecap:butt;stroke-linejoin:round"
+       id="path4938"
+       inkscape:connector-curvature="0" />
+  </g>
+  <g
+     id="patch_6"
+     style="stroke-linecap:butt;stroke-linejoin:round"
+     transform="translate(-109.339,-26.967556)">
+    <path
+       clip-path="url(#p68ad265ad8)"
+       d="m 617.474,391.02 157.448,0 0,-272.783 -157.448,0 z"
+       style="fill:#ffffb2;stroke-linecap:butt;stroke-linejoin:round"
+       id="path4941"
+       inkscape:connector-curvature="0" />
+  </g>
+  <g
+     id="patch_7"
+     style="stroke-linecap:butt;stroke-linejoin:round"
+     transform="translate(-109.339,-26.967556)">
+    <path
+       clip-path="url(#p68ad265ad8)"
+       d="m 617.474,115.558 113.178,0 0,-26.4796 -113.178,0 z"
+       style="fill:#fecc5c;stroke-linecap:butt;stroke-linejoin:round"
+       id="path4944"
+       inkscape:connector-curvature="0" />
+  </g>
+  <g
+     id="patch_8"
+     style="stroke-linecap:butt;stroke-linejoin:round"
+     transform="translate(-109.339,-26.967556)">
+    <path
+       clip-path="url(#p68ad265ad8)"
+       d="m 733.33,115.558 37.824,0 0,-26.4796 -37.824,0 z"
+       style="fill:#fd8d3c;stroke-linecap:butt;stroke-linejoin:round"
+       id="path4947"
+       inkscape:connector-curvature="0" />
+  </g>
+  <g
+     id="patch_9"
+     style="stroke-linecap:butt;stroke-linejoin:round"
+     transform="translate(-109.339,-26.967556)">
+    <path
+       clip-path="url(#p68ad265ad8)"
+       d="m 773.832,115.558 1.09,0 0,-26.4796 -1.09,0 z"
+       style="fill:#f03b20;stroke-linecap:butt;stroke-linejoin:round"
+       id="path4950"
+       inkscape:connector-curvature="0" />
+  </g>
+  <g
+     id="patch_10"
+     style="stroke-linecap:butt;stroke-linejoin:round"
+     transform="translate(-109.339,-26.967556)">
+    <path
+       clip-path="url(#p68ad265ad8)"
+       d="m 110.678,364.446 234.884,0 0,-275.3676 -234.884,0 z"
+       style="fill:#edf8e9;stroke-linecap:butt;stroke-linejoin:round"
+       id="path4953"
+       inkscape:connector-curvature="0" />
+  </g>
+  <g
+     id="patch_11"
+     style="stroke-linecap:butt;stroke-linejoin:round"
+     transform="translate(-109.339,-26.967556)">
+    <path
+       clip-path="url(#p68ad265ad8)"
+       d="m 348.24,364.446 263.877,0 0,-174.994 -263.877,0 z"
+       style="fill:#bae4b3;stroke-linecap:butt;stroke-linejoin:round"
+       id="path4956"
+       inkscape:connector-curvature="0" />
+  </g>
+  <g
+     id="patch_12"
+     style="stroke-linecap:butt;stroke-linejoin:round"
+     transform="translate(-109.339,-26.967556)">
+    <path
+       clip-path="url(#p68ad265ad8)"
+       d="m 348.24,186.773 197.786,0 0,-97.6946 -197.786,0 z"
+       style="fill:#74c476;stroke-linecap:butt;stroke-linejoin:round"
+       id="path4959"
+       inkscape:connector-curvature="0" />
+  </g>
+  <g
+     id="patch_13"
+     style="stroke-linecap:butt;stroke-linejoin:round"
+     transform="translate(-109.339,-26.967556)">
+    <path
+       clip-path="url(#p68ad265ad8)"
+       d="m 548.704,186.773 63.413,0 0,-97.6946 -63.413,0 z"
+       style="fill:#238b45;stroke-linecap:butt;stroke-linejoin:round"
+       id="path4962"
+       inkscape:connector-curvature="0" />
+  </g>
+  <defs
+     id="defs4964">
+    <clipPath
+       id="p68ad265ad8">
+      <rect
+         height="669.59998"
+         width="669.59998"
+         x="108"
+         y="86.400002"
+         id="rect4967"
+         style="stroke-linecap:butt;stroke-linejoin:round" />
+    </clipPath>
+  </defs>
+  <text
+     xml:space="preserve"
+     style="font-size:19.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Webdings;-inkscape-font-specification:Webdings"
+     x="202.0876"
+     y="544.46667"
+     id="text4076"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan4078"
+       x="202.0876"
+       y="544.46667"
+       style="font-size:22.39999962px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:TeX Gyre Adventor;-inkscape-font-specification:TeX Gyre Adventor">sensitivity </tspan><tspan
+       sodipodi:role="line"
+       x="202.0876"
+       y="572.46667"
+       style="font-size:22.39999962px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:TeX Gyre Adventor;-inkscape-font-specification:TeX Gyre Adventor"
+       id="tspan4122">analysis</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:19.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Webdings;-inkscape-font-specification:Webdings"
+     x="524.06256"
+     y="557.75366"
+     id="text4076-4"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan4078-6"
+       x="524.06256"
+       y="557.75366"
+       style="font-size:22.39999962px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:TeX Gyre Adventor;-inkscape-font-specification:TeX Gyre Adventor">uncertainty </tspan><tspan
+       sodipodi:role="line"
+       x="524.06256"
+       y="585.75366"
+       style="font-size:22.39999962px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:TeX Gyre Adventor;-inkscape-font-specification:TeX Gyre Adventor"
+       id="tspan4120">analysis</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:19.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Webdings;-inkscape-font-specification:Webdings"
+     x="538.32996"
+     y="239.53748"
+     id="text4076-4-4"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       x="538.32996"
+       y="239.53748"
+       style="font-size:22.39999962px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:TeX Gyre Adventor;-inkscape-font-specification:TeX Gyre Adventor"
+       id="tspan4120-8">model</tspan><tspan
+       sodipodi:role="line"
+       x="538.32996"
+       y="267.53748"
+       style="font-size:22.39999962px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:TeX Gyre Adventor;-inkscape-font-specification:TeX Gyre Adventor"
+       id="tspan4709">selection</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:19.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Webdings;-inkscape-font-specification:Webdings"
+     x="73.431267"
+     y="211.67117"
+     id="text4076-4-4-0"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       x="73.431267"
+       y="211.67117"
+       style="font-size:22.39999962px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:TeX Gyre Adventor;-inkscape-font-specification:TeX Gyre Adventor"
+       id="tspan4709-2">parameter</tspan><tspan
+       sodipodi:role="line"
+       x="73.431267"
+       y="239.67117"
+       style="font-size:22.39999962px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:TeX Gyre Adventor;-inkscape-font-specification:TeX Gyre Adventor"
+       id="tspan4737">estimation</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:19.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Webdings;-inkscape-font-specification:Webdings"
+     x="325.87125"
+     y="241.26248"
+     id="text4076-4-4-0-4"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       x="325.87125"
+       y="241.26248"
+       style="font-size:22.39999962px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:TeX Gyre Adventor;-inkscape-font-specification:TeX Gyre Adventor"
+       id="tspan4737-5">model</tspan><tspan
+       sodipodi:role="line"
+       x="325.87125"
+       y="269.26248"
+       style="font-size:22.39999962px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:TeX Gyre Adventor;-inkscape-font-specification:TeX Gyre Adventor"
+       id="tspan4765">calibration</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:19.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Webdings;-inkscape-font-specification:Webdings"
+     x="276.5206"
+     y="97.310966"
+     id="text4076-4-4-0-4-0-9"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       x="276.5206"
+       y="97.310966"
+       style="font-size:22.39999962px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:TeX Gyre Adventor;-inkscape-font-specification:TeX Gyre Adventor"
+       id="tspan4793-8">inverse</tspan><tspan
+       sodipodi:role="line"
+       x="276.5206"
+       y="125.31097"
+       style="font-size:22.39999962px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:TeX Gyre Adventor;-inkscape-font-specification:TeX Gyre Adventor"
+       id="tspan4821">modelling</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:12.00601959px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Webdings;-inkscape-font-specification:Webdings"
+     x="374.93512"
+     y="21.002083"
+     id="text4076-4-4-0-4-0-0"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       x="374.93512"
+       y="21.002083"
+       style="font-size:14.39999962px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:TeX Gyre Adventor;-inkscape-font-specification:TeX Gyre Adventor"
+       id="tspan4765-2-5">parameter</tspan><tspan
+       sodipodi:role="line"
+       x="374.93512"
+       y="39.002079"
+       style="font-size:14.39999962px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:TeX Gyre Adventor;-inkscape-font-specification:TeX Gyre Adventor"
+       id="tspan4793-9">optimization</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:19.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Webdings;-inkscape-font-specification:Webdings"
+     x="500.9057"
+     y="10.641598"
+     id="text4076-4-4-0-4-0-1"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       x="500.9057"
+       y="10.641598"
+       style="font-size:14.39999962px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:TeX Gyre Adventor;-inkscape-font-specification:TeX Gyre Adventor"
+       id="tspan4793-1">model </tspan><tspan
+       sodipodi:role="line"
+       x="500.9057"
+       y="28.641598"
+       style="font-size:14.39999962px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:TeX Gyre Adventor;-inkscape-font-specification:TeX Gyre Adventor"
+       id="tspan5162">identification</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:19.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Webdings;-inkscape-font-specification:Webdings"
+     x="691.36456"
+     y="66.815987"
+     id="text4076-4-4-0-4-0-96"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       x="691.36456"
+       y="66.815987"
+       style="font-size:14.39999962px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:TeX Gyre Adventor;-inkscape-font-specification:TeX Gyre Adventor"
+       id="tspan4793-3">structure</tspan><tspan
+       sodipodi:role="line"
+       x="691.36456"
+       y="84.815987"
+       style="font-size:14.39999962px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:TeX Gyre Adventor;-inkscape-font-specification:TeX Gyre Adventor"
+       id="tspan5158">characterisation</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:19.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Webdings;-inkscape-font-specification:Webdings"
+     x="627.73462"
+     y="14.999859"
+     id="text4076-4-4-0-4-0-1-0"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       x="627.73462"
+       y="14.999859"
+       style="font-size:14.39999962px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:TeX Gyre Adventor;-inkscape-font-specification:TeX Gyre Adventor"
+       id="tspan5162-0">model </tspan><tspan
+       sodipodi:role="line"
+       x="627.73462"
+       y="32.999859"
+       style="font-size:14.39999962px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:TeX Gyre Adventor;-inkscape-font-specification:TeX Gyre Adventor"
+       id="tspan5190">discrimination</tspan></text>
+  <path
+     style="fill:none;stroke:#000000;stroke-width:0.80000007px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="M 472.86421,81.744664 451.45949,45.088287"
+     id="path5700"
+     inkscape:connector-curvature="0" />
+  <path
+     style="fill:none;stroke:#000000;stroke-width:0.80000007px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="m 565.20182,70.651884 5.14772,-38.92152"
+     id="path5700-7"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="cc" />
+  <path
+     style="fill:none;stroke:#000000;stroke-width:0.80000007px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="M 641.73114,75.991134 653.35068,36.746023"
+     id="path5700-7-6"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="cc" />
+  <path
+     style="fill:none;stroke:#000000;stroke-width:0.80000007px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="M 664.99106,74.455854 686.6784,64.498878"
+     id="path5700-7-6-7"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="cc" />
+  <path
+     style="fill:none;stroke:#000000;stroke-width:0.80000001px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="m -80.862033,872.59266 799.198133,0"
+     id="path5796"
+     inkscape:connector-curvature="0" />
+  <path
+     style="fill:none;stroke:#000000;stroke-width:0.80000001px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="m 18.68797,945.03244 0,39.3559"
+     id="path5798"
+     inkscape:connector-curvature="0" />
+  <g
+     id="g5836"
+     style="stroke-linecap:butt;stroke-linejoin:round"
+     transform="translate(-109.339,-26.967556)">
+    <path
+       inkscape:connector-curvature="0"
+       id="path5796-8"
+       d="m 28.126967,986.64407 99.900003,0"
+       style="fill:none;stroke:#000000;stroke-width:0.80000001px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path5796-5"
+       d="m 128.82697,996.71182 709.6896,0"
+       style="fill:none;stroke:#000000;stroke-width:0.80000001px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+  </g>
+  <text
+     xml:space="preserve"
+     style="font-size:60px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+     x="-669.83386"
+     y="390.25287"
+     id="text3050"
+     sodipodi:linespacing="125%"
+     transform="matrix(0.80000001,0,0,0.80000001,0,-1.9452829e-6)"><tspan
+       sodipodi:role="line"
+       x="-669.83386"
+       y="390.25287"
+       id="tspan3058">model </tspan><tspan
+       sodipodi:role="line"
+       x="-669.83386"
+       y="465.25287"
+       id="tspan3062">calibration</tspan></text>
+</svg>

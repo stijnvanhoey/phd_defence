@@ -40,8 +40,8 @@
 		<div class="reveal">
             <div class="topleft" id="chapter-name">	</div> 
 			<div class="bottomright" id="slide-progress"> </div>
-            
-			<div class="slides">
+            <header style="position: absolute; top: 250px; left: 250px; z-index:500; font-size:80px; background-color: rgba(0,0,0,0.2); color:#FFF8F0"></header>
+        <div class="slides">
 	    <!-- ############## -->
             <!-- INTRODUCTION -->
             <!-- ############## -->
@@ -50,10 +50,10 @@
                 <div class="altpanel" style="height: 430px">
                     <div class="alternative fragment spin-out" data-fragment-index="10" >
                             <h2 class="name">Stijn Van Hoey</h2>
-                            <p>
+                            <div>
                                 <small>Supervised by</small>
                                 <h3 class="name">Piet Seuntjens</h3><h3 class="name">Ingmar Nopens</h3>
-                            </p>
+                            </div>
                             <div>
                                 <img width="300" src="figs/logos/VITO.png" alt="VITOP" class="logo" />
                                 <img width="300" src="figs/logos/biomath_ugentblue.png" alt="Biomath ugent" class="logo" />
@@ -62,19 +62,25 @@
                                 Gent<br/>
                                 1 July, 2016
                             </div>
+                            <div style="margin-top: .5em; font-size: .75em; line-height: 1">   
+                              <a href="https://creativecommons.org/licenses/by/4.0/" class="license">
+                                <img src="figs/logos/cc-by.svg" alt="This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.">
+                                </a>
+                            </div>
                     </div>
                     <div class="alternative fragment spin-in" data-fragment-index="10">
-                        <p>
+                        <div>
                             <small>a collaboration between</small><br />
                             <img width="200" src="figs/logos/VITO.png" alt="VITO" class="logo" />
                             <h4 style="margin-bottom: 0">Flemish institute <br /> for Technological Research</h4>
                             <small><code>https://vito.be</code></small>									
-                        </p><p>
+                        </div>
+                        <div>
                             <small>and </small><br />
                             <img width="200" src="figs/logos/biomath_ugentblue.png" alt="BIOMATH" class="logo" />
                             <h4 style="margin-bottom: 0">Department of Mathematical Modelling, <br />Statistics and Bioinformatics</h4>
                             <small><code>http://biomath.ugent.be/</code></small>
-                        </p>
+                        </div>
                     </div>                    
                 </div>                                        
             </section>
@@ -83,68 +89,183 @@
                 <!-- https://jmeblommaert.files.wordpress.com/2014/02/china-smog11.jpg luchtvervuiling1 -->
                 <!-- http://www.dvhn.nl/archief/Water-oude-zandafgraving-Grote-Moere-weer-gezond-20778139.html watervervuiling1 -->
 
-            <section data-background="figs/introduction/wateroverlast1.jpg">
-		<h2 style="color:white;text-align: left;">Floods</h2>
-		<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-                <div class="footnote"><a href="https://staddamme.wordpress.com/wateroverlast/">
+            <!-- kastel - langs de schelde, mooi en al-->
+            <section data-background="figs/introduction/landscape6.jpg">
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <div class="footnote"><a href="http://static.panoramio.com/photos/original/14200444.jpg" style="color:white">
+                    Source: http://static.panoramio.com/photos/original/14200444.jpg</a></div>  
+            </section>
+
+            <!-- maar dat brengt ook risico's met zich mee...-->
+            <!--<section data-background="figs/introduction/wateroverlast1.jpg">
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <div class="footnote"><a href="https://staddamme.wordpress.com/wateroverlast/"  style="color:white">
                     Source: https://staddamme.wordpress.com/wateroverlast/</a></div>                  
+            </section>-->
+            <section data-background="figs/introduction/overstroming_kastel3.jpg">
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <div class="footnote" style="color:white">Credits: Clement Windey</div>                  
             </section>
-            <section data-background="figs/introduction/watervervuiling1.jpg">
-		<h1>Water pollution</h1>
-                <div class="footnote"><a href="http://www.dvhn.nl/archief/Water-oude-zandafgraving-Grote-Moere-weer-gezond-20778139.html">
-                    Source: http://www.dvhn.nl/archief/Water-oude-zandafgraving-Grote-Moere-weer-gezond-20778139.html</a></div>  
-            </section>
-            <section data-background="figs/introduction/luchtvervuiling1.jpg"> 
-                <h2>Air pollution</h2>
-                <div class="footnote" style="position: fixed; height: 2vh; padding-top: 0.5vh; padding-bottom: 0.5vh; z-index: 20;">
-			         <a href="https://jmeblommaert.files.wordpress.com/2014/02/china-smog11.jpg">
-                    Source: https://jmeblommaert.files.wordpress.com/2014/02/china-smog11.jpg</a>
-		          </div>    
-            </section>
-            
-            <!-- Why modelling? -->
-            <section>
-            <h1>System understanding</h1>
-            <h2>How does it work?</h2>
-            <h1>Prediction</h1>
-            <h2>What can we expect?</h2>
-            </section>
-            
-            <section>
-            <h1>Measuring is knowledge!</h1>
-            <!-- fig Arduino setup + sensoren -->
-            </section>
-
-            <section>
-            <h1>But what if...</h1>
-            <!-- bos aanplanten,..  -->
-            
-            <h1>Added value of models...</h1>
-            </section>
-            
-            <!-- DATA-Driven vs PROCESS based -->
-            <section> </section>         
-
-            <!-- Troubles of process based modelling practice -->
-            <section>
-            <!-- imbalance between heterogenity of nature vs monocity in used models -> practice of model fitting instead of system understanding -->
-            </section>
-            <section> </section>
-            
-            <!-- Central aim of Phd: How can we enable the 'right model for the right reasons'? -->
-            <section> </section>
-            <section>
-            2 pijlers:
-            <h1>Model building</h1>
-            <h1>Model evaluation</h1>
+            <section data-background="figs/introduction/overstroming_kastel1.jpg">
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <div class="footnote" style="color:white">Credits: Clement Windey</div>                  
             </section>            
             
+            <!-- dat was zo al 100 jr geleden-->
+            <section data-background="figs/introduction/wateroverlast4.jpg" data-background-position="center" data-background-size="1400px">
+		          <!-- <h2 style="color:white;text-align: left;">Floods</h2>-->
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <div class="footnote"><a href="http://www.oude-postkaarten.com/foto/overstroming-hamme.JPG"  style="color:white">
+                    Source: http://www.oude-postkaarten.com/foto/overstroming-hamme.jpg</a></div>                  
+            </section>    
 
+            <!-- maar we zijn er ons de laatste maande weeral eens volop van bewust geworden -->
+            <section data-background="figs/introduction/news_slide.png" data-background-size="1000px">
+		          <!-- <h2 style="color:white;text-align: left;">Floods</h2>-->
+                  <!--<a class="twitter-timeline" href="https://twitter.com/NoodweerBe" width="30%" height="300px" 
+                     style="position:absolute;top:0px;bottom:0px;">Tweets by NoodweerBe</a> 
+                  <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>-->
+            </section>
+            
+            <!-- humans vs earth -->
+            <section data-state="header1" data-background="figs/introduction/dirty_earth1.jpg">
+                <style>.header1 header:after {content: "Environmental issues"; }</style>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <div class="footnote"><a href="https://populationspeakout.org/"  style="color:white">
+                    Credits: Zak Noyle</a></div>                
+            </section>            
+            
+            <section data-state="header2" data-background="figs/introduction/blackboard2.png">
+                <style>.header2 header:after {content: "Why mathematical models?"; }</style>
+            </section>
+            
+            <!-- nu hebben we modellen om dat te voorspellen -->
+            
+            <!-- predict -->
+            <section>
+                <h1>Predict</h1><iframe src="http://www.buienradar.nl/lokalebuienradar/?lat=51.05&lng=3.71667&overname=2&zoom=8&naam=Gent&size=3&voor=0" 
+                                                          scrolling="no" width="550" height="512" frameborder="no"></iframe>
+            </section>
+            <section>
+                <h1>Predict</h1><iframe width="100%" height="600px" src="https://www.waterinfo.be/"></iframe>
+            </section>
+            <!-- backup internet-connection -->
+            <!--
+            <section><h1>Predict</h1><img src="figs/introduction/buienradar_backup.png"></section>  
+            <section><h1>Predict</h1><img src="figs/introduction/waterinfo_backup.png"></section>            
+            -->
+
+            <!-- what if -->
+            <section>
+                <h1>What if?</h1>
+                <img src="figs/introduction/lucht-Ringland.jpg">
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <div class="footnote"><a href="https://vito.be/nl/landgebruik/luchtkwaliteit"  style="color:white">
+                    Credits: VITO</a></div>                
+            </section>
+
+            <section>
+                <h1>What if?</h1>
+                <img src="figs/introduction/animation_25_above.gif">               
+                <!-- <div class="fragment">
+                    <h1 style="color:red"><center>Do not try this at home...</center></h1>
+                    <img src="figs/introduction/donottry.jpg"> 
+                </div> -->
+            </section>
+            
+            <!-- Effect of management practices met bomen; het uittesten van wateruzivering,... liever virtueel! -->
+
+            <section data-background="figs/introduction/donottry.jpg">
+                <!-- <h1 style="color:red"><center>Do not try this at home...</center></h1> -->
+            </section>            
+            
+            
+            <section data-state="header3" data-background="figs/introduction/binary.png">
+                <style>.header3 header:after {content: "Virtual simulation"; }</style>
+                <!-- <br><br><br><br><br>
+                <div class="fragment">
+                    <img src="figs/introduction/virtual.png" widht="100%">                 
+                </div> -->
+            </section>
+
+            <section data-background="figs/introduction/biomath1.png" data-background-size="2000px"></section>
+            <section data-background="figs/introduction/biomath2.png" data-background-size="2000px"></section>
+            <section data-background="figs/introduction/biomath3.png" data-background-size="2000px"></section>
+            <section data-background="figs/introduction/biomath4.png" data-background-size="2000px"></section>
+            <section data-background="figs/introduction/biomath5.png" data-background-size="2000px"></section>
+            
+            <!-- <h1>An important difference...</h1>
+              <div style="text-align: left;" class="fragment">
+                    <h3><b>Data mining</b>: Let the data speak for itself</h3>
+                    <img src="figs/introduction/data_mining.png">
+              </div> -->
+
+            <section data-state="header4" data-background="figs/introduction/flowchart.jpg">
+                <style>.header4 header:after {content: "Process based models"; }</style>
+            </section>                                
+            
+            <section data-background="figs/introduction/proces1.png"></section>
+            <section data-background="figs/introduction/proces2.png"></section>
+            <section data-background="figs/introduction/proces3b.png"></section>            
+            <section data-background="figs/introduction/proces3.png"></section>            
+            <section data-background="figs/introduction/proces4.png"></section>
+            <section data-background="figs/introduction/proces5.png"></section>
+      
+
+            <!-- Troubles of process based modelling practice -->
+            <section data-background="figs/introduction/sowhat.jpg"></section>
+            <!-- http://www.angloitalianfollowus.com/wp-content/uploads/2014/07/punk-rock-italian-cuisine-at-so-what-vegan-restaurant-09.jpg  
+            <section data-background="figs/introduction/whocares.jpg"></section>-->
+            
+            <!-- imbalance between heterogenity of nature vs monocity in used models -> practice of model fitting instead of system understanding -->
+            <section data-background="figs/introduction/proces5.png"></section>
+            <section data-background="figs/introduction/problem1.png"></section>
+            <section data-background="figs/introduction/problem2.png"></section>
+
+            <section data-background="figs/introduction/swissknife.jpg">
+              <h1>Contradiction...</h1>
+              <div style="text-align: left; float: left; background-color: rgba(255, 255, 255, 0.8); padding:0.2em" class="fragment" >
+                <p data-markdown>- heterogeneous nature</p>
+                <p data-markdown>- uniqueness of place</p>
+                <p data-markdown>- diversity of <br>research questions</p>
+                <!-- more Elements -->
+              </div>
+
+              <div style="text-align: left; float: right; background-color: rgba(255, 255, 255, 0.8);  padding:0.2em" class="fragment">
+                <p>reusage of <b>monolithic</b> <br> legacy models</p>
+              </div>
+            </section>          
+            
+            <section>
+                <h1>In literature...</h1>
+                <img src="figs/introduction/treemap.png" width="80%">
+            </section>
+
+            <section> 
+            <h1>Central problem statement:</h1>
+            <blockquote cite="" style="font-size:1.5em; line-height:100px">
+						“The <b>identification</b> of the most <b>appropriate model structure</b> for a
+                        given problem remains an outstanding research challenge”
+            </blockquote>
+            </section>            
+            
+            <!-- Central aim of Phd: How can we enable the 'right model for the right reasons'? -->
+            <section> 
+            <h1>Main objective:</h1>
+            <blockquote cite="James W. Kirchner" style="font-size:2em; line-height:100px">
+						“The right model for the right reasons”
+            </blockquote>
+            <p>- James W. Kirchner- </p>
+            </section>
+
+            <section data-background="figs/introduction/structure1.png"></section>        
+            <section data-background="figs/introduction/structure2.png"></section>        
+            
             <!-- ############## -->
             <!-- PART 1. MODELS -->
             <!-- ############## -->
             <section>The case of lumped hydrological models: what/who/...</section>
-            <section>Fetish for acronyms? - wordcloud<br>Wat zit er onder de motorkap?!? Essentieel om vergelijking mogelijk te maken: analogie.. => requirements!.</section>
+            <section>Fetish for acronyms? - wordcloud<br>Wat zit er onder de motorkap?!? Essentieel om vergelijking mogelijk te maken: analogie..  requirements!.</section>
             <section>Finding the common elements; junctions, fluxes, splits</section>
             <section>The mathematical translation: ODE - easyweasy</section>
             <section>Question: how can we transparently communicate about these models zodat verandering effectief daaraan toe te kennen</section>
@@ -153,6 +274,8 @@
             <section>matrix-voorstelling: summary of model structure</section>
             <section>matrix-voorstelling voldoet aan de requirements, zonder gebruiker technologie op te leggen. YES!</section>
     
+            
+            <section data-background="figs/introduction/structure3.png"></section>        
 	    <!-- ############## -->
             <!-- PART 2. METHODS -->
             <!-- ############## -->
@@ -180,8 +303,8 @@
                     <div style="text-align: right; width: 100%" class="fragment">
                         <ul style="text-align: right; list-style-position: inside; 
                                    font-size: .5em; line-height: 1.2; width: 100%">
-                            <li><a href="?print-pdf">Printable version</li>
-                            <li><a href="TODO">Available online</li>
+                            <li><a href="?print-pdf">Printable version</a></li>
+                            <li><a href="TODO">Available online</a></li>
                         </ul>
                     </div>
                 </section>				
@@ -205,7 +328,7 @@
 				slideNumber: false,
 
 				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+				transition: Reveal.getQueryHash().transition || 'none', // default/cube/page/concave/zoom/linear/fade/none
 
 				// Parallax scrolling
 				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',

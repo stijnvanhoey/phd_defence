@@ -1,0 +1,95 @@
+
+
+## Introduction
+* uitdagingen -> milieu (recente floods, waterkwaliteit,...)
+* nut van modellen - waarom?
+    - SYSTEM INSIGHT NEEDED
+        - je wil niet eerst de dijk bouwen en dan blijkt die te klein
+        - je wil de waterzuivering zo optimaal mogelijk doen verlopen
+        - je wil niet wachten tot bos er staat om effect te evalueren
+        - ...
+    - PREDICTION
+        - zal het morgen overstromen?
+        - is er een risico op overschrijding van de limiet?
+        - luchtkwaliteit door SMOGalarm
+
+* Belangrijk onderscheid
+    - puur voorspellen (DATA-DRIVEN) vs 'process-based' modelling
+        --> wink naar naamgevingen allerhande die worden gebruikt
+    - PROCES-BASED models is onze focus
+        * we hebben een HYPOTHESE van hoe het systeem werkt + evalueren of dat klopt
+        * voorbeelden - system based approach -
+            * flowchart van een lumped hydrological model + achtergrond
+            (* flowchart van een respirometrie model)
+        * Model belangrijke elementen: VARIABELEN & PARAMETERS
+         (identificeerbaarheid?)
+
+## Troubles?
+- problemen divers/natuur heterogeen -> tailor-made approach nodig (het model moet als een maatpak aansluiten en gefit worden)
+- MAAR, de realiteit is veelal recyclage van eenzelfde model voor nieuwe toepassingen en voor andere omgeving:
+    -> illustratie van eenzelfde model voor veel omgevingen -> SWAT,...
+    -> illustratie van de literatuur - fig intro
+    -> Modelling != parameter fitting => mr is wel common practice
+
+Central question? How can we identify individual model decisions (should I include or not?). How can we improve this 'common practice'? How can we find deficiencies in the model structure? How can we make model comparison possible again?
+
+## Solution?
+Oplossing bestaat uit 2 pijlers:
+1. We moeten de **model-opbouw** en communicatie anders aanpakken (flexibiliteit)
+2. We moeten model **evaluatie** verbeteren
+
+## 1. Model-opbouw:
+* We hebben flexibiliteit nodig, die nu niet altijd is ondersteund (frameworks bestaan weliswaar)
+* requirements om dat mogelijk te maken: oplijsten?
+
+### using the example of hydrological models
+- many models do exist -> PDM, NAM, SAC,... fetisjisme vr acronymen
+- allemaal anders, allemaal een alternatieve implementatie (niet altijd zichtbaar),... => daardoor voelt het alsof we appelen en peren vergelijken
+- ALLEMAAL DEZELFDE wiskundige achtergrond - ODEs, easy-chill 3e bach!
+(een kat is een kat)
+- Uitwerking voor de PDM/NAM modellen:
+    - toon vergelijking, er zijn wel degelijk verschillen,...
+    - analogie met de fietsroutes - knooppunten: de default model-aanpak dwingt mensen tot 1 specifieke route 'kastelenroute',... Knooppunten-netwerk: flexibiliteit in de keuze
+ => we need to be able to communicate these choices...
+
+PLAN 1: een nieuw pakket -> maar verschuift eigenlijk het probleem naar opnieuw een beperking voor gebruiker -> te ruw knooppunten-netwerk
++ acronym-fetish vr structuur naar package: we need something more general!
+
+PLAN 2: standaard voorstelling
+- inspiratie bij naburige 'community' (over het muurtje gekeken)
+- inspiratie bij Clark/Fenicia: de lego-blokjes die we gebruiken +  overlopen (ook nog eens variabelen en parameters uitleggen)
+- matrix-voorstelling gebruiken ze daar voor modellen
+- => vertaling naar 'lumped hydrological models' matrix
+    * voorbeelden van de output van PDM/NAM
+    * ++ we kunnen nu in model strucuur variëren en die variatie ook TRANSPARANT communiceren!
+    * ++ in heel veel omgevingen te her-implementeren...
+    * + we kunnen mss ook benchmarks afspreken?!
+
+## 2. Model-evaluation:
+- Currently: 'the model fits the data reasonable,...' (quotes verzamelen)
+- we need a doctor (tools,...) to evaluate the model structure!
+
+### SA-methoden etc (meerwaardein presentatie?)
+- er bestaan verschillende methoden, opnieuw 'fetisisjme voor acronymen'...
+- centraal element van de 'metric'...
+
+### DYNIA aanpak (LANG en BREED opbouwen)
+- The idea: Parameters zijn constant binnen onze hypothese; we gaan ze toelaten om te veranderen en gaan dan nagaan wat er gebeurt ... -> rariteiten identificeren => aanpassingen voorstellen
+- DYNIA explained
+    * 4-delen fig opbouwen
+    * interpretatie fig uitleggen
+- DYNIA APPLIED
+    * toepassing op PDM/NAM
+    * wat leren we hieruit...
+
++ package beschikbaarheid
+
+## Conclusies
+- Modellen zijn er in alle maten en vormen en dat is goed; we moeten ze opbouwen met de requirements...
+- evaluatie-methoden => gemeenschappelijke opbouw, transparantie,...
+
+
+
+
+-----------voor de bereiden vragen-------------------------------
+* de vraag van wanneer stopt het?

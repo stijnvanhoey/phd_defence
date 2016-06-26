@@ -1,0 +1,45 @@
+- DE IDEE-analogie: als je wil vergelijken tussen 2 aanpakken,
+bv. aardappelsoorten vergelijken, dan plant je die uit en hou je rekening met de
+eventuele confounders (voor de nerds)
+cfr. 2 renners vergelijken hoe snel ze fietsen en ze beide op een 'koersfiets' plaatsen, maar de ene dan wel op een nieuw racemachine en de andere op een oud retrokarreke.
+je wil weten of A beter dan B, wel dan alles zelfde, behalve component A en B => vergelijken
+
+
+Dit is bij modelleren veelal niet mogelijk!
+Dus plan was eigenlijk: we vergelijken modellen; MAAR dat lukt niet, want ze zijn zoals ze nu zijn gebouwd niet vergelijkbaar -> dus architectuur meenemen/veranderen.
+Methodes zijn er eigenlijk wel al wat, maar...
+
+Dan zeg je, waarom zo belangrijk? MODELSELECTIE: juiste model voor de juiste redenen!
+Wel, enkele voorbeelden: overstroming, vervuiling, climate change,... STEL FOUT?
+
+cfr. software in VW: we rijden er allemaal graag mee (die auto), maar wie eens deftig onder de moterkap kijkt, ziet al snel gebreken, die we liever niet laten uitkomen. 
+Nu, VW wil vooral WINST maken -> maar dit is RESEARCH => OPEN, TRANSPARANT en REPRODUCEERBAAR!
+
+Net in die gebreken zit het potentieel!
+
+INleiding:
+Vb van waarom (water) modellen gebruiken: kastel doennonderlopen of wwtp doen kapot draaien.... Nee dank u?! Virtueel is OK!
+
+Zijn de modellen die we gebruiken het goeie model? Veel goeie elementen maar.... Monolieten! Kluwen! Weinig flexibel en moeilijk aanpasbaar!
+
+EINDE:
+Analogie ivm hor environment al Models are linker: dier op dier met lijm proberen vasthechten... Beter solide lego blokken maken, cfr wat packages zijn...
+
+IBM motivatie werk diagnostisch. Kijven van ouder met wijzende vinger en kind dat niet luistert... Of nog anders, waarbij je hulpmiddel aanreikt om het wel te doen...
+
+Fietsroutes in vlaanderen... VS fietsknoopunten!
+
+
+%\textit{Proprietary software is an unsafe building material, Mr. Moglen had said. You can’t inspect it.}
+http://www.nytimes.com/2015/09/23/nyregion/volkswagens-diesel-fraud-makes-critic-of-secret-code-a-prophet.html
+
+hilarische quote bij modelvergelijking: geen enkel perfect + allemaal assumpties die moeten begrepen worden
+
+WAAROM modelleren?
+- te duur: altijd opnieuw raketten bouwen tot er eentje kan landen; dan liever wat simuleren
+- te gevaarlijk: nuclear power operrators op full scale Doel/Tihange laten 'proberen'...
+- tijdsduur: boom groeit traag, alle combi's testen te traag
+- design: brug,...
+
+
+
