@@ -13,7 +13,9 @@
 		<link rel="stylesheet" href="css/reveal.min.css">
 		<link rel="stylesheet" href="css/theme/defense.css" id="theme"/>
 		<link rel="stylesheet" href="css/phd.css" />
-
+        <link rel="stylesheet" href="css/fullscreen-img.css">
+        
+        
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
 
@@ -40,7 +42,7 @@
 		<div class="reveal">
             <div class="topleft" id="chapter-name">	</div> 
 			<div class="bottomright" id="slide-progress"> </div>
-            <header style="position: absolute; top: 250px; left: 250px; z-index:500; font-size:80px; background-color: rgba(0,0,0,0.2); color:#FFF8F0"></header>
+            <header style="position: absolute; top: 250px; left: 250px; z-index:500; font-size:80px; background-color: rgba(0,0,0,0.4); color:#FFF8F0"></header>
         <div class="slides">
 	    <!-- ############## -->
             <!-- INTRODUCTION -->
@@ -175,9 +177,9 @@
             
             <!-- Effect of management practices met bomen; het uittesten van wateruzivering,... liever virtueel! -->
 
-            <section data-background="figs/introduction/donottry.jpg">
-                <!-- <h1 style="color:red"><center>Do not try this at home...</center></h1> -->
-            </section>            
+            <!--<section data-background="figs/introduction/donottry.jpg">
+                 <h1 style="color:red"><center>Do not try this at home...</center></h1>
+            </section>        -->
             
             
             <section data-state="header3" data-background="figs/introduction/binary.png">
@@ -188,11 +190,13 @@
                 </div> -->
             </section>
 
+            <!--
             <section data-background="figs/introduction/biomath1.png" data-background-size="2000px"></section>
             <section data-background="figs/introduction/biomath2.png" data-background-size="2000px"></section>
             <section data-background="figs/introduction/biomath3.png" data-background-size="2000px"></section>
             <section data-background="figs/introduction/biomath4.png" data-background-size="2000px"></section>
             <section data-background="figs/introduction/biomath5.png" data-background-size="2000px"></section>
+            -->
             
             <!-- <h1>An important difference...</h1>
               <div style="text-align: left;" class="fragment">
@@ -200,10 +204,11 @@
                     <img src="figs/introduction/data_mining.png">
               </div> -->
 
-            <section data-state="header4" data-background="figs/introduction/flowchart.jpg">
-                <style>.header4 header:after {content: "Process based models"; }</style>
+            <section data-state="header31" data-background="figs/introduction/flowchart.jpg">
+                <style>.header31 header:after {content: "Process based models"; }</style>
             </section>                                
             
+            <!-- TODO!!: fig omtrent evenwicht er middienin zetten -->
             <section data-background="figs/introduction/proces1.png"></section>
             <section data-background="figs/introduction/proces2.png"></section>
             <section data-background="figs/introduction/proces3b.png"></section>            
@@ -222,8 +227,8 @@
             <section data-background="figs/introduction/problem1.png"></section>
             <section data-background="figs/introduction/problem2.png"></section>
 
-            <section data-background="figs/introduction/swissknife.jpg">
-              <h1>Contradiction...</h1>
+            <section data-background="figs/introduction/maatpak.jpg">
+              <h1>Contradiction</h1>
               <div style="text-align: left; float: left; background-color: rgba(255, 255, 255, 0.8); padding:0.2em" class="fragment" >
                 <p data-markdown>- heterogeneous nature</p>
                 <p data-markdown>- uniqueness of place</p>
@@ -231,8 +236,10 @@
                 <!-- more Elements -->
               </div>
 
-              <div style="text-align: left; float: right; background-color: rgba(255, 255, 255, 0.8);  padding:0.2em" class="fragment">
-                <p>reusage of <b>monolithic</b> <br> legacy models</p>
+              <div style="text-align: left; float: right; background-color: rgba(255, 255, 255, 0.8);  padding:0.2em; line-height: 1.7em;" class="fragment">
+                  <p>reuse</p> 
+                  <p><b>off the shelf</b><br></p>  <!-- <b>monolithic</b> <br> legacy models -->
+                  <p>models</p>
               </div>
             </section>          
             
@@ -264,33 +271,303 @@
             <!-- ############## -->
             <!-- PART 1. MODELS -->
             <!-- ############## -->
-            <section>The case of lumped hydrological models: what/who/...</section>
-            <section>Fetish for acronyms? - wordcloud<br>Wat zit er onder de motorkap?!? Essentieel om vergelijking mogelijk te maken: analogie..  requirements!.</section>
-            <section>Finding the common elements; junctions, fluxes, splits</section>
-            <section>The mathematical translation: ODE - easyweasy</section>
-            <section>Question: how can we transparently communicate about these models zodat verandering effectief daaraan toe te kennen</section>
-            <section>The failed approach: yet another package: pyfuse</section>
-            <section>Over het muurtje kijken: de wwtp community</section>
-            <section>matrix-voorstelling: summary of model structure</section>
-            <section>matrix-voorstelling voldoet aan de requirements, zonder gebruiker technologie op te leggen. YES!</section>
-    
+            <section data-state="header4" data-background="figs/introduction/landscape1.jpg">
+                <style>.header4 header:after {content: "Lumped hydrological models"; }</style>
+            </section>
+
+            <!--
+            <section data-state="header5" data-background="figs/structure/rainfall_runoff2.png">
+                <style>.header5 header:after {content: "Distributed hydrological models"; }</style>
+            </section>-->
+            <!--
+            </section>     
+            <section data-state="header4" data-background="figs/structure/rainfall_runoff3.png">
+                <style>.header4 header:after {content: "Lumped hydrological models"; }</style>
+            </section> 
+            <section data-state="header4" fullscreen-img="figs/introduction/landscape1.jpg" fullscreen-size="contain">
+                <style>.header4 header:after {content: "Lumped hydrological models"; }</style>
+            </section> -->           
+            <section>
+                <img src="figs/structure/rainfall_runoff.png" width="100%">
+            </section> 
+            <section>
+                <img src="figs/structure/rainfall_runoff2b.png" width="100%">
+            </section> 
+            <section>
+                <img src="figs/structure/rainfall_runoff3.png" width="100%">
+            </section> 
+            <section>
+                <img src="figs/structure/rainfall_runoff4.png" width="100%">
+            </section> 
+            <section>
+                <img src="figs/structure/rainfall_runoff5.png" width="100%">
+            </section>
+            <section>
+                <img src="figs/structure/rrmodels1.png" width="100%">
+            </section>
+            <section>
+                <img src="figs/structure/rrmodels2.png" width="100%">
+            </section>            
+            <section>
+                <img src="figs/structure/rrmodels3.png" width="100%">
+            </section>                    
+            <section data-background="figs/structure/rrmodels4.png"></section>  
+            <section data-state="header7" data-background="figs/structure/rrmodels5.png">
+                <style>.header7 header:after {content: "Fetish for acronyms!"; }</style>
+            </section>
             
+            <!--<section>
+                <div style="background-color: rgba(255, 255, 255, 0.8);font-size:1em">
+                     <ul>
+                      <li>Common components</li>
+                      <li>Different implementations</li>                         
+                      <li>Each of them individually have limited flexibility</li> 
+                      <li>Lack of transparency</li>
+                    </ul> 
+                </div>
+                <br><br>
+                <h2 class="fragment" style="background-color: rgba(255, 255, 255, 0.8);">Difficult to compare!</h2>
+            </section>   -->
+            
+            <section data-background="figs/structure/problem1.jpg">
+                <div style="background-color: rgba(255, 255, 255, 0.9);text-align:left;padding:1em">
+                    <h3>Problem 1: flexibility</h3>
+                    <p>Individual flexibility of each of these models limited</p>
+                </div>
+                <br><br><br><br><br>
+            </section>
+            
+            <!-- <section data-background="figs/structure/problem1_solved.jpg">
+                <div style="background-color: rgba(255, 255, 255, 0.9);text-align:left;padding:1em">
+                    <h3>Problem 1: flexibility</h3>
+                    <p>Individual flexibility of each of these models limited</p>
+                </div>
+                <br><br><br><br><br>
+            </section> -->
+
+            <section data-background="figs/structure/closed.jpg">
+                <div style="background-color: rgba(255, 255, 255, 0.9);text-align:left;padding:1em">
+                    <h3>Problem 2: Difficult to compare</h3>
+                    <p>Lack of transparency of the implementation</p>
+                    <p></p>
+                </div>
+                <br><br><br><br><br>
+            </section>             
+
+            <section data-background="figs/structure/problem2.jpg">
+                <div style="background-color: rgba(255, 255, 255, 0.9);text-align:left;padding:1em">
+                    <h3>Problem 2: Difficult to compare</h3>
+                    <p>Hard to identify the effect of individual model components</p>
+                    <p></p>
+                </div>
+                <br><br><br><br><br>
+            </section>  
+            
+            <section>
+                <h1>Differential equations to the rescue</h1>
+                <img src="figs/structure/ode.png" width="100%">
+            </section>
+            
+            <section>
+                <h1>Differential equations to the rescue</h1>
+                <img src="figs/structure/M1_example.png">
+            </section>            
+            
+            <section>
+                <h1>Translation of PDM model</h1>
+                <img src="figs/structure/PDM_comparison_ode.png">               
+            </section>
+
+            <section>
+                <h1>Translation of NAM model</h1>
+                <img src="figs/structure/NAMcomparison_ode.png" width="80%">               
+            </section>
+            
+            <section>
+                Question:<br><br> How can we <b>transparently communicate</b><br> about the chosen model structure?<br><br>
+                <div class="fragment">
+                <ul>
+                    <li>Providing maximal <b>flexibility</b></li>               
+                    <li>Independent from <b>technology</b><br>(software environment)?</li>
+                    <!--<li>Direct link with <b>differential equations</b></li>-->
+                    <!-- <li>Make comparison of <b>individual changes</b> possible</li> -->
+                </ul>
+                </div>
+            </section>
+            
+            <section data-state="header9" data-background="figs/structure/wall.png">
+                <style>.header9 header:after {content: "Gujer matrix representation"; }</style>     
+                <br><br><br>
+                <div style="background-color: rgba(255, 255, 255, 0.9);text-align:center;padding:1em" class="fragment">
+                    <p>A well-known concept within the <br>
+                    wastewater modelling community</p>
+                    <p>Summary of mathematical model<br> in single table representation</p>
+                    
+                </div>
+            </section>   
+            
+            <section>
+                <h1>The building blocks</h1>
+                <img src="figs/structure/pdm_model.png"><br><br>
+                <h3></h3>
+                <div class="fragment">
+                <ul>
+                    <li>reservoirs</li>               
+                    <li>joints/splits</li>
+                    <li>lag functions</li>
+                    <li>constitutive functions</li>
+                </ul>
+                </div>
+            </section>
+
+            <section>
+                <img src="figs/structure/pdm_matrix.png" width="90%"> 
+                <br><br><br><br><br>
+            </section>            
+            
+              <section>
+                <img src="figs/structure/pdm_matrix_el.png" width="90%"> 
+                <br><br><br><br><br>
+            </section>             
+            
+            <!-- <section>
+              <table class="reveal">
+                  <thead>
+                    <tr>
+                      <td><b>requirements</b></td>
+                      <td><b>properties matrix representation</b></td>
+                    </tr>
+                  </thead>
+                <tr>
+                  <td>alternative process descriptions</td>
+                  <td>choice of constitutive functions</td>
+                </tr>
+                <tr>
+                  <td>alternative interconnections and construction options</td>
+                  <td>choice of the reservoir configuration</td>
+                </tr>
+                <tr>
+                  <td>separation between mathematical and computation model</td>
+                  <td>solver independent description of the model structure</td>
+                </tr>   
+                <tr>
+                  <td>accessible and transparent</td>
+                  <td>open communication of the chosen model structure</td>
+                </tr>   
+              </table>
+            </section> -->
+            
+            <section data-background="figs/structure/problem1_solved.jpg"> <!-- data-state="header10" -->
+                <!-- <style>.header10 header:after {content: "Model structure conclusions"; }</style>-->
+                <h1 style="background-color: rgba(255, 255, 255, 0.9);">Take home message:</h1>
+                <div style="background-color: rgba(255, 255, 255, 0.9);text-align:left;padding:1em">
+                    Model matrix representation:<br>
+                    Flexibility while keeping maximal transparency                    
+                </div>
+                <br>
+                <div style="background-color: rgba(255, 255, 255, 0.9);text-align:left;padding:1em" class="fragment">
+                    Implementation does matter! 
+                </div>      
+            </section>
+        
+        
             <section data-background="figs/introduction/structure3.png"></section>        
 	    <!-- ############## -->
             <!-- PART 2. METHODS -->
             <!-- ############## -->
-            <section>Fetish for acronyms?</section>
-            <section>Finding the common elements: sampling procedures, metrics, reporting</section>
-            <section>Surgery room of model evaluation</section>
-            <section></section>            
-    
+            <section data-background="figs/evaluation/fitting1.png"></section>
+            <section data-background="figs/evaluation/fitting1b.png"></section>
+            <section data-background="figs/evaluation/fitting2.png"></section>            
+            <section data-background="figs/evaluation/fitting3.png"></section>            
+            <section data-background="figs/evaluation/fitting4.png"></section>
+            <section data-background="figs/evaluation/fitting5.png"></section>
+            <section data-background="figs/evaluation/fitting6.png"></section>          
+            
+            <section data-state="header11" data-background="figs/evaluation/surgery.jpg"> 
+                <style>.header11 header:after {content: "Model evaluation tools"; }</style>
+                <br><br><br>
+                <div style="background-color: rgba(255, 255, 255, 0.9);text-align:left;padding:1em" class="fragment">
+                    Objectives: <br>
+                    <ul>
+                        <li>Provide algorithm implementations (pystran)</li>
+                        <li>Adapt and improve existing methods<br><br>
+                            <b>DYnamic Identifiability Analysis (Dynia)</b>
+                        </li>                       
+                    </ul>                     
+                </div>
+            </section>
+            
+            <section>
+                <img src="figs/evaluation/flow_parsets1.png">
+            </section>
+            <section>
+                <img src="figs/evaluation/flow_parsets2.png">
+            </section>
+            <section>
+                <img src="figs/evaluation/flow_parsets3.png">
+            </section>            
+            
+            <section>
+                <h1>DYnamic Identifiability Analysis:</h1>
+                Allow parameters to change in time<br>to improve the fit<br> to identify model deficiencies
+            </section>
+        
+            <section data-background="figs/evaluation/dynia1.png" data-background-size="1200px"></section>
+            <section data-background="figs/evaluation/dynia2.png" data-background-size="1200px"></section>
+            <section data-background="figs/evaluation/dynia3.png" data-background-size="1200px"></section>
+            <section data-background="figs/evaluation/dynia4.png" data-background-size="1200px"></section>
+            <section data-background="figs/evaluation/dynia5.png" data-background-size="1200px"></section>
+            <section data-background="figs/evaluation/dynia6.png" data-background-size="1200px"></section>
+            <section data-background="figs/evaluation/dynia7.png" data-background-size="1200px"></section>
+
+            <section>
+                <h1>Interpretation</h1>
+                <img src="figs/evaluation/dynia_interpr.png">
+            </section>      
+
+            <section>
+                <h1>NAM model storage deficiency </h1>
+                <img src="figs/evaluation/NamL1.png">
+            </section>
+            <section>
+                <h1>NAM model storage deficiency</h1>
+                <img src="figs/evaluation/NamL.png">
+                <div class="fragment" style="text-align:left">
+                    Maximal storage parameter lower during winter?
+                </div>
+            </section>        
+            <!--<section>
+                <h1>Application NAM model</h1>
+                <img src="figs/evaluation/NamL2.png">
+            </section>      -->
+
+            <section data-background="figs/evaluation/dynia_grid.png"> <!-- data-state="header10" -->
+                <!-- <style>.header10 header:after {content: "Model structure conclusions"; }</style>-->
+                <h1 style="background-color: rgba(255, 255, 255, 0.9);">Take home message:</h1>
+                <div style="background-color: rgba(255, 255, 255, 0.9);text-align:left;padding:1em">
+                    Dynamic parameter variations provides information about model structure failures.<br>
+                </div>
+                <br>
+                <div style="background-color: rgba(255, 255, 255, 0.9);text-align:left;padding:1em" class="fragment">
+                    Learning by failure!
+                </div>      
+            </section>            
+                
 	    <!-- ############## -->
             <!-- CLOSING -->
             <!-- ############## -->
-            <section>
-            <h1>Conclusions</h1>
+            
+            <section data-background="figs/evaluation/conclude1.png" data-background-size="1200px"></section>
+            <section data-background="figs/evaluation/conclude2.png" data-background-size="1200px"></section>
+            <section data-background="figs/evaluation/conclude3.png" data-background-size="1200px"></section>
+            <section data-background="figs/evaluation/conclude4.png" data-background-size="1200px"></section>
+            <section data-background="figs/evaluation/conclude5.png" data-background-size="1200px"></section>
+            
+            
+            <!--<section>
+            <h1>Conclusions</h1>  2 kolommen 
             - testbaarheid van individuele modelbeslissingen mogelijk maken heeft stelt vereisten aan modelopbouw: REQUIREMENTS!
-            </section>
+            </section>-->
             
             <section data-state="sand">
                 <section>
@@ -315,6 +592,7 @@
 
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/defense.js"></script>
+ 
 
 		<script>
 
@@ -329,6 +607,10 @@
 
 				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
 				transition: Reveal.getQueryHash().transition || 'none', // default/cube/page/concave/zoom/linear/fade/none
+                math: {
+                    mathjax: 'https://cdn.mathjax.org/mathjax/latest/MathJax.js',
+                    config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
+                },                
 
 				// Parallax scrolling
 				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
@@ -341,6 +623,8 @@
 					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
 					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+                    { src: 'lib/js/fullscreen-img.js' },
+                    { src: 'plugin/math/math.js', async: true },
 					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
 				]
 			});

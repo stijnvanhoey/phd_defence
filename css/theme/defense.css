@@ -336,10 +336,11 @@ background-color: #f7f3de; }
 	color: black;
 	background: rgba(255, 255, 255, 0.6);
 	border-radius: 10px;
-	margin-bottom: 50px;
-	border: 1px solid rgba(0, 0, 0, 0.2);
+	margin-bottom: 32px;
+	border: 0px solid rgba(0, 0, 0, 0.2);
 	line-height:1;
     text-align: left;
+    background-color: rgba(255, 255, 255, 0.85);
 }
 
 /*********************************************
