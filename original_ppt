@@ -46,8 +46,8 @@
 
 	<body>
 		<div class="reveal">
-			<div class="topleft" id="chapter-name">	</div> 
-			<div class="bottomright" id="slide-progress">	</div> 
+			<div class="topleft" id="chapter-name">	</div>
+			<div class="bottomright" id="slide-progress">	</div>
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 
@@ -79,10 +79,10 @@
 									<h3 style="margin-bottom: 0">ROMMA Project</h3>
 									Robust Mechanical Models for Assemblies
 									<br />
-									<small><code>http://romma.lmt.ens-cachan.fr</code></small>									
+									<small><code>http://romma.lmt.ens-cachan.fr</code></small>
 								</p><p>
 									<small>Partners</small><br />
-									
+
 									<img width="100" src="images/logos/siemens_lms.png" alt="Siemens" class="logo" />
 									<img width="100" src="images/logos/distene.png" alt="Distene" class="logo" />
 									<img width="100" src="images/logos/logo_ljk.png" alt="LJK" class="logo" />
@@ -99,10 +99,10 @@
 								**Processing Geometric Models of Assemblies to Structure and Enrich them with Functional Information**.
 								* This work is done in the frame of ROMMA project, where we aim at accelerating the
 								mechanical Product Development Process through the reduction of time dedicated to numeric simulations.
-							</div> 
+							</div>
 						</aside>
 					</section>
-				
+
 					<section>
 						<div>
 							<h3 style="margin-bottom: 5px">What is a DMU?</h3>
@@ -244,11 +244,11 @@
 								<li>Give them potential functional interpretations based on geometry.</li>
 								<li>Qualitatively assess functional interpretations based on their <em>behavior</em> in a mechanical context.</li>
 								<li>Complete the functional image by gathering information bits and pieces into one coherent knowledge base.</li>
-								<li>End up with a DMU, now functionally restructured and enriched.</li> 
+								<li>End up with a DMU, now functionally restructured and enriched.</li>
 							</ul>
 						</aside>
 					</section>
-					
+
 					<section>
 						<h2>Overview</h2>
 						<ul class="toc"></ul>
@@ -262,11 +262,11 @@
 				</section>
 
 				<section data-state="sand" data-chapter="Form and Function">
-				
+
 					<section>
 						<ul class="toc pause"></ul>
 					</section>
-					
+
 					<section>
 						<h2>Function, form and behavior</h2>
 						<blockquote>
@@ -296,7 +296,7 @@
 						<aside class="notes">
 							<ul>
 								<li>Function is what designers have in mind when they create a model.</li>
-								<li>The relation between function and structure 
+								<li>The relation between function and structure
 								has been emphasized throughout the literature.</li>
 								<li>Now a relevant structure is missing in a DMU, however, its embodiment, i.e.	<b>form</b> is available, which provides the first
 								clue to a functionally-significant structure.
@@ -362,14 +362,14 @@
 							</div>
 						</aside>
 					</section>
-					
-				</section>			
-	
-				<section data-state="sky" data-chapter="Form Analysis">				
+
+				</section>
+
+				<section data-state="sky" data-chapter="Form Analysis">
 					<section>
 						<ul class="toc pause"></ul>
 					</section>
-				
+
 					<section>
 						<h2>Form at the outset</h2>
 						<ul style="margin-bottom: 1em">
@@ -385,7 +385,7 @@
 							<div class="conclusion fragment zoom-out">
 								To capture functionality, geometric interactions need to be analysed first.
 							</div>
-						</div>					
+						</div>
 						<aside class="notes">
 							<ul style="font-size: .75em">
 								<li>Before we develop further in this part we ask ourselves the question.</li>
@@ -398,7 +398,7 @@
 							</ul>
 						</aside>
 					</section>
-				
+
 					<section>
 						<table class="hanoi">
 								<colgroup>
@@ -422,7 +422,7 @@
 									</ul>
 								</td></tr>
 							</table>
-						
+
 							<table class="hanoi">
 							<colgroup>
 								<col style="width: 30%" />
@@ -452,7 +452,7 @@
 								</ul>
 							</td></tr>
 						</table>
-						
+
 						<aside class="notes">
 							<div  data-markdown style="font-size: .75em">
 								* Now to seize geometric interaction between components we define a conceptual entity that we refer to as **Conventional Interface**.
@@ -468,8 +468,8 @@
 							</div>
 						</aside>
 					</section>
-				
-				
+
+
 					<section>
 						<table class="hanoi">
 							<colgroup>
@@ -516,8 +516,8 @@
 							</div>
 						</div>
 						<aside class="notes">
-								<ul style="font-size: .75em">	
-									<li>In an attempt to functionally explain CIs, we define the <b>Functional Interface</b> that captures inter-component 
+								<ul style="font-size: .75em">
+									<li>In an attempt to functionally explain CIs, we define the <b>Functional Interface</b> that captures inter-component
 									interactions that fulfil or participate to the fulfilment of a set of functions.</li>
 									<b>Observations:</b>
 									<li>A given geometric configuration, i.e. a CI, can be assigned more than one functional interpretation, i.e. FI: a result of indeterministic relation between form and function.</li>
@@ -527,8 +527,8 @@
 								</ul>
 						</aside>
 					</section>
-				
-				
+
+
 					<section>
 						<h2 style="margin-bottom: 0px">Simple, yet efficient geometric interaction detection</h2>
 						<div style="height: 300px">
@@ -552,7 +552,7 @@
 						</div>
 						<div>
 							<div class="fragment push-out" data-fragment-index="1"><table class="hanoi"><tr>
-								<td>								
+								<td>
 									<img src="images/geom_init.png" width="300px" />
 								</td>
 								<td>
@@ -591,7 +591,7 @@
 							</div>
 						</aside>
 					</section>
-				
+
 					<section>
 						<h2>Assembly Graph Structure</h2>
 						<table class="hanoi">
@@ -638,7 +638,7 @@
 							</div>
 						</aside>
 					</section>
-					
+
 					<section>
 						<h2>Results</h2>
 						<div style="float: left; width: 45%">
@@ -656,7 +656,7 @@
 										<li>87 contacts;</li>
 										<li>13 interferences.</li>
 									</ul>
-								</li>								
+								</li>
 							</ul>
 						</div>
 						<figure style="float: right; width: 45%">
@@ -669,7 +669,7 @@
 							<img src="images/pump_cig.png" width="100%"/>
 						</figure>
 					</section>
-					
+
 					<section>
 						<h2>Results</h2>
 						<div style="float: left; width: 45%">
@@ -685,7 +685,7 @@
 										<li>396 contacts;</li>
 										<li>116 interferences.</li>
 									</ul>
-								</li>								
+								</li>
 							</ul>
 						</div>
 						<figure style="float: right; width: 45%">
@@ -752,7 +752,7 @@
 								* However, it is only part of the truth, as a Cyl Interference can also represent a Spline link.
 								An FI that is show in the image and that transmits rotation while allowing translation.
 								* In order to resolve this ambiguous interpretation, more information must be incorporated,
-								especially those about the context of the interface. 
+								especially those about the context of the interface.
 							</div>
 						</aside>
 					</section>
@@ -771,7 +771,7 @@
 						</div>
 						<aside class="notes">
 							<ul>
-								<li>At this stage, however, we are interested in assigning <b>all</b> possible functional interpretations to 
+								<li>At this stage, however, we are interested in assigning <b>all</b> possible functional interpretations to
 								a given geometric config. represented by a CI.</li>
 								<li>To this end, we organize geometric and functional knowledge at the interface level in hierarchies
 								called FI and CI taxonomies resp.</li>
@@ -781,7 +781,7 @@
 							</ul>
 						</aside>
 					</section>
-					
+
 					<section data-transition-speed="slow">
 						<h2>Relevant structure</h2>
 						<table class="ladder" id="meter1">
@@ -796,7 +796,7 @@
 								<td>Group</td>
 								<td>
 									<div style="width: 200px">
-										<div class="fragment module" data-fragment-index="10">&nbsp;</div>								
+										<div class="fragment module" data-fragment-index="10">&nbsp;</div>
 									</div>
 								</td>
 								<td>?</td>
@@ -808,7 +808,7 @@
 								<td>Component</td>
 								<td>
 									<div style="width: 200px">
-										<div class="fragment component" data-fragment-index="10">&nbsp;</div>								
+										<div class="fragment component" data-fragment-index="10">&nbsp;</div>
 									</div>
 								</td>
 								<td>?</td>
@@ -818,7 +818,7 @@
 								<td>CI</td>
 								<td>
 									<div style="width: 200px">
-										<div class="fragment interface" data-fragment-index="10">&nbsp;</div>	
+										<div class="fragment interface" data-fragment-index="10">&nbsp;</div>
 									</div>
 								</td>
 								<td>FIs</td>
@@ -839,16 +839,16 @@
 						<aside class="notes">
 							<div data-markdown>
 								At this stage:
-								
+
 								* The connection between form and function is made at the interface level.
 								* A primary restructuring is made at the DMU level, to allow functional enrichment.
 								* The link at the interface level is, however, ambiguous.
-								* To remedy this ambiguity, we need context. This leads us to a behavioral study of the DMU. The subjet of the next part. 
+								* To remedy this ambiguity, we need context. This leads us to a behavioral study of the DMU. The subjet of the next part.
 							</div>
 						</aside>
 					</section>
 				</section>
-				
+
 				<section data-state="sand" data-chapter="Qualitative Behavioral Study">
 					<section>
 						<ul class="toc pause"></ul>
@@ -871,7 +871,7 @@
 									</span>
 								</span>
 							</span>
-							</td><td>					
+							</td><td>
 								<table class="hanoi">
 									<col style="border-right: 1px solid black" />
 									<col style="border-right: 1px solid black" />
@@ -911,7 +911,7 @@
 								assembly would fall apart.
 								* **Objective** use such a behvioral judgement to narrow down multiple functional interpret per CI.
 								* Introducing the concept of Ref. States that define what a valid behavior is.
-									* The goal then shifts to eliminating functional interpretations that violate one or more reference states.  
+									* The goal then shifts to eliminating functional interpretations that violate one or more reference states.
 							</div>
 						</aside>
 					</section>
@@ -1058,7 +1058,7 @@
 								<li>Iterate CIG nodes until there's no more FIs to eliminate.</li>
 								<li class="fragment" data-fragment-index="6">Heuristically pick node C.</li>
 							</ul>
-						</div></div>						
+						</div></div>
 						<div class="override fragment" data-fragment-index="7" style="position: absolute; top: 400px"><div class="fragment fade-out" data-fragment-index="60">
 							<table class="hanoi" style="float: left"><tr>
 								<td rowspan="3">
@@ -1071,7 +1071,7 @@
 								<td class="rightarrow" style="font-size:.75em">Coordinate<br />alignment</td>
 							</tr></tr>
 								<td><img src="images/pln_pln.png" height="100px"/></td>
-							</tr></table>						
+							</tr></table>
 							<table class="hanoi" style="float: left"><tr>
 								<td>CI<sub>1</sub></td><td></td><td>CI<sub>2</sub><td/></td><td></td><td>C</td>
 							</tr><tr style="font-size: 0.5em" class="fragment" data-fragment-index="10">
@@ -1117,7 +1117,7 @@
 									</figure>
 								</td>
 							</tr></table>
-							
+
 							<table style="position: fixed; bottom: 15px; right: 5px; font-size: .5em; margin: 0; line-height: 1"><tr>
 								<td>$\odot$</td><td>Not Null</td>
 								</tr><tr>
@@ -1128,12 +1128,12 @@
 								<td>$\ominus$</td><td>Strictly Negative</td>
 								</tr><tr>
 								<td>$\otimes$</td><td>Arbitrary</td>
-							</tr></table>		
+							</tr></table>
 						</div></div>
 						<div class="override fragment" data-fragment-index="60" style="position: absolute; top: 400px">
 							<ul>
 								<li>Nothing more to do at node C<span class="fragment" data-fragment-index="61">, close it.</span></li>
-								<li class="fragment" data-fragment-index="62">Pick next component...</li> 
+								<li class="fragment" data-fragment-index="62">Pick next component...</li>
 							</ul>
 							<div class="override">
 								<div class="conclusion fragment zoom-out">
@@ -1156,12 +1156,12 @@
 									* Does the interval contain zero?
 								* Invalid solutions leads to the elimination of FIs.
 								* When nothing more can be done, the component is closed.
-								* Next! 
+								* Next!
 								* **Conclusion:** A first level of filtering of a considerable amount of irrelevant functional interpretations at the interface level.
 							</div>
 						</aside>
 					</section>
-					
+
 					<section>
 						<h2>Reference States</h2>
 						<ul>
@@ -1210,11 +1210,11 @@
 								Eliminate FIs that produce unnecessary static indeterminacy.
 							</div>
 						</div>
-						
+
 						<aside class="notes">
 							<div style="font-size: .75em" data-markdown>
 								* Ambiguity still remains in CIs having multiple statically-valid FI.
-								* **RS II** provides the necessary criterion 
+								* **RS II** provides the necessary criterion
 								to select the appropriate FI when multiple static solutions co-exist.
 								* This RS considers the product in operational.
 								* It asserts that all statically indeterminate configuration must be functionally justified,
@@ -1224,7 +1224,7 @@
 								* Elimination of non-functional statically indeterminate interpretation leads to **one FI per CI**.
 								* **Conclusion:** This consists a second and last level filtering, leading to unique function interpretation at the interface level.
 							</div>
-						</aside>						
+						</aside>
 					</section>
 
 					<section>
@@ -1250,7 +1250,7 @@
 									<li><em>Bolted junction</em> is an example of a functional cluster.</li>
 								</ul>
 							</td></tr>
-						</table>							
+						</table>
 						<table class="hanoi">
 							<colgroup>
 								<col style="width: 30%" />
@@ -1272,7 +1272,7 @@
 									<li>A <em>threaded link</em> is a load generator.</li>
 								</ul>
 							</td></tr>
-						</table>							
+						</table>
 						<aside class="notes">
 							<div style="font-size: .75em" data-markdown>
 								* As mentioned earlier, another level at which the DMU must be functionally enriched for FEA purposes is the *functional group* level.
@@ -1352,7 +1352,7 @@
 							</div>
 						</aside>
 					</section>
-					
+
 					<section>
 						<h2>Functional knowledge</h2>
 						<table class="ladder" id="meter2">
@@ -1367,7 +1367,7 @@
 								<td>Group</td>
 								<td>
 									<div style="width: 200px">
-										<div class="fragment module" data-fragment-index="10">&nbsp;</div>								
+										<div class="fragment module" data-fragment-index="10">&nbsp;</div>
 									</div>
 								</td>
 								<td>
@@ -1383,7 +1383,7 @@
 								<td>Component</td>
 								<td>
 									<div style="width: 200px">
-										<div class="fragment component" data-fragment-index="10">&nbsp;</div>								
+										<div class="fragment component" data-fragment-index="10">&nbsp;</div>
 									</div>
 								</td>
 								<td>?</td>
@@ -1393,7 +1393,7 @@
 								<td>CI</td>
 								<td>
 									<div style="width: 200px" id="interface-full-gray">
-										<div class="fragment interface" data-fragment-index="10">&nbsp;</div>	
+										<div class="fragment interface" data-fragment-index="10">&nbsp;</div>
 									</div>
 								</td>
 								<td>
@@ -1413,7 +1413,7 @@
 						</div>
 						<aside class="notes">
 							<div style="font-size: .75em" data-markdown>
-								* If we try to position ourself with respect to the objectives: 
+								* If we try to position ourself with respect to the objectives:
 									* The gap between form and function is completely bridged at two levels.
 							</div>
 						</aside>
@@ -1432,7 +1432,7 @@
 						<ul>
 							<div style="float: right">
 								<img src="images/funcinfo_group.png" width="400" class="fragment push-out" data-fragment-index="70"/>
-								<img src="images/funcinfo_unknown.png" width="400" class="fragment push-in" data-fragment-index="70"/>															 
+								<img src="images/funcinfo_unknown.png" width="400" class="fragment push-in" data-fragment-index="70"/>
 							</div>
 							<li>Thanks to R.S. functional knowledge is available at component <em>interface</em> and component <em>group</em> levels.</li>
 							<li class="fragment" data-fragment-index="70">
@@ -1468,7 +1468,7 @@
 								manner at two levels...
 								* The objective shifts in this part to utilize this knowledge to functionally enrich components themselves.
 								* To this end we define the concept of functional designation which is a label put on a given component to uniquely
-								identify its function.								
+								identify its function.
 								* FDs are not only mere textual annotations of components, they tightly link components to other
 								functional entities in the DMU, particularly FIs at the interface level and
 								FC at the component group level, as we will see shortly.
@@ -1507,7 +1507,7 @@
 								* First observation in this regard is that we cannot tell the function of a component by looking at it alone!
 								Functionality of a component is determined in light of functional interfaces and the functional
 								groups it participates to.
-								* Another important observation is the dynamic nature of component functions. Indeed, the set of 
+								* Another important observation is the dynamic nature of component functions. Indeed, the set of
 								functional designation that we may describe depends on the underling domain such aeronautics or automotive industries.
 								* This knowledge can be captured in a hierarchical structure in what is referred to as FD taxonomies.
 								* It needs to be represented formally, yet in a dynamic and adaptive manner!
@@ -1582,7 +1582,7 @@
 							<div style="font-size: .5em" class="fragment" data-fragment-index="30">
 								$$
 								\begin{array}{>{\sf}l>{\sf}l>{\sf}l}
-								\sf Capscrew \sqsupseteq 
+								\sf Capscrew \sqsupseteq
 								 & \sf Component & \sqcap \\
 								 & \exists \sf forms.ThreadedLink & \sqcap \\
 								 & \exists \sf forms.PlanarSupport & \sqcap \\
@@ -1612,7 +1612,7 @@
 							</ul>
 						</aside>
 					</section>
-					
+
 					<section>
 						<h2>Captured knowledge</h2>
 						<ul>
@@ -1703,7 +1703,7 @@
 						</tr></table>
 						<div class="override">
 							<div class="conclusion fragment zoom-out">
-								Components are functionally <em>enriched</em> down to the interface level, and geometrically <em>restructured</em> accordingly.								
+								Components are functionally <em>enriched</em> down to the interface level, and geometrically <em>restructured</em> accordingly.
 							</div>
 						</div>
 						<aside class="notes">
@@ -1714,11 +1714,11 @@
 								<li>Reasoners are inquired about FDs. Matches are found.</li>
 								<li><b>Conclusion:</b> At this stage
 								functional units, i.e. components, are enriched with functional knowledge down to the interface level,
-								after they've been geometrically restructure to this end.  
+								after they've been geometrically restructure to this end.
 							</ul>
 						</aside>
 					</section>
-					
+
 					<section>
 						<h2>Results</h2>
 						<figure style="position: relative">
@@ -1734,7 +1734,7 @@
 							</figcaption>
 						</figure>
 					</section>
-										
+
 					<section>
 						<h2>Results</h2>
 						<figure style="position: relative">
@@ -1750,7 +1750,7 @@
 							</figcaption>
 						</figure>
 					</section>
-					
+
 					<section>
 						<h2>Complete connection</h2>
 						<table class="ladder" id="meter3">
@@ -1765,7 +1765,7 @@
 								<td>Group</td>
 								<td>
 									<div style="width: 200px">
-										<div class="fragment module" data-fragment-index="10">&nbsp;</div>								
+										<div class="fragment module" data-fragment-index="10">&nbsp;</div>
 									</div>
 								</td>
 								<td>One FC</td>
@@ -1777,7 +1777,7 @@
 								<td>Component</td>
 								<td>
 									<div style="width: 200px">
-										<div class="fragment component" data-fragment-index="10">&nbsp;</div>								
+										<div class="fragment component" data-fragment-index="10">&nbsp;</div>
 									</div>
 								</td>
 								<td>
@@ -1794,7 +1794,7 @@
 								<td>CI</td>
 								<td>
 									<div style="width: 200px">
-										<div class="fragment interface" data-fragment-index="10">&nbsp;</div>	
+										<div class="fragment interface" data-fragment-index="10">&nbsp;</div>
 									</div>
 								</td>
 								<td>One FI</td>
@@ -1820,7 +1820,7 @@
 					</section>
 
 				</section>
-				
+
 				<section data-state="sand">
 					<section>
 						<h2>Template-based preprocessing of DMU for FEA purposes.</h2>
@@ -1830,7 +1830,7 @@
 						<div class="fragment flip-in" data-fragment-index="10">
 							<table class="hanoi">
 								<col />
-								<col />					
+								<col />
 							<tr>
 							<td>
 								<img src="images/bj_imprints_1.png" style="width: 400px" class="fragment push-out"  data-fragment-index="20"/>
@@ -1873,12 +1873,12 @@
 						</aside>
 					</section>
 				</section>
-				
+
 				<section data-state="sky" data-chapter="Conclusions and Perspectives">
 					<section>
 						<ul class="toc pause"></ul>
 					</section>
-					
+
 					<section data-background="images/squares.png" data-background-size="700px">
 						<h2>Conclusions</h2>
 						<ul>
@@ -1920,7 +1920,7 @@
 									* Building an ontology of *FDs*.
 							</div>
 						</aside>
-					</section>		
+					</section>
 
 					<section data-background="images/circles.png" data-background-size="700px">
 						<h2>Perspectives</h2>
@@ -1935,7 +1935,7 @@
 							<ul>
 								<li>Take into account symmetry and repetitive geometries.</li>
 								<li>Implement and introduce new reference states, such as kinematic chains.</li>
-								<li>Extend existing ontology by defining new FDs and their rules. 
+								<li>Extend existing ontology by defining new FDs and their rules.
 							</ul>
 							</li>
 						</ul>
@@ -1952,7 +1952,7 @@
 									by considering repetitive geometries and symmetries to avoid redundant reasoning.
 									* The implementation of other reference states that account for the
 									violation of one or more of the global hypotheses, such as friction and deformation.
-									* The extension of current ontology by adding more rules to recognize new functional designations.								
+									* The extension of current ontology by adding more rules to recognize new functional designations.
 							</div>
 						</aside>
 					</section>
@@ -1976,7 +1976,7 @@
 								<li><a href="http://pagesperso.g-scop.grenoble-inp.fr/~shahwana/phd/defense/">Available online</li>
 							</ul>
 						</div>
-					</section>				
+					</section>
 				</section>
 
 
