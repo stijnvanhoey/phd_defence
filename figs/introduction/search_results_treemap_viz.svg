@@ -9,13 +9,16 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   height="909.61682"
+   height="938.03375"
    version="1.1"
-   viewBox="0 0 803.95074 727.69346"
-   width="1004.9384"
+   viewBox="0 0 875.34054 750.42701"
+   width="1094.1757"
    id="svg4917"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="search_results_treemap_viz.svg">
+   sodipodi:docname="search_results_treemap_viz.svg"
+   inkscape:export-filename="/home/stvhoey/Desktop/defence/figs/introduction/treemap.png"
+   inkscape:export-xdpi="150.04823"
+   inkscape:export-ydpi="150.04823">
   <metadata
      id="metadata4971">
     <rdf:RDF>
@@ -24,7 +27,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -37,13 +40,13 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1865"
-     inkscape:window-height="1056"
+     inkscape:window-width="1097"
+     inkscape:window-height="840"
      id="namedview4969"
      showgrid="false"
      inkscape:zoom="0.43703703"
-     inkscape:cx="712.52655"
-     inkscape:cy="505.26212"
+     inkscape:cx="355.4742"
+     inkscape:cy="520.969"
      inkscape:window-x="55"
      inkscape:window-y="24"
      inkscape:window-maximized="1"
@@ -76,7 +79,7 @@
   <g
      id="patch_2"
      style="stroke-linecap:butt;stroke-linejoin:round"
-     transform="translate(-109.339,-26.967556)">
+     transform="translate(-109.339,-4.2339774)">
     <path
        clip-path="url(#p68ad265ad8)"
        d="m 109.339,754.661 504.118,0 0,-386.197 -504.118,0 z"
@@ -87,7 +90,7 @@
   <g
      id="patch_3"
      style="stroke-linecap:butt;stroke-linejoin:round"
-     transform="translate(-109.339,-26.967556)">
+     transform="translate(-109.339,-4.2339774)">
     <path
        clip-path="url(#p68ad265ad8)"
        d="m 109.339,365.785 504.118,0 0,-278.0458 -504.118,0 z"
@@ -98,7 +101,7 @@
   <g
      id="patch_4"
      style="stroke-linecap:butt;stroke-linejoin:round"
-     transform="translate(-109.339,-26.967556)">
+     transform="translate(-109.339,-4.2339774)">
     <path
        clip-path="url(#p68ad265ad8)"
        d="m 616.135,754.661 160.126,0 0,-359.623 -160.126,0 z"
@@ -109,7 +112,7 @@
   <g
      id="patch_5"
      style="stroke-linecap:butt;stroke-linejoin:round"
-     transform="translate(-109.339,-26.967556)">
+     transform="translate(-109.339,-4.2339774)">
     <path
        clip-path="url(#p68ad265ad8)"
        d="m 616.135,392.36 160.126,0 0,-304.6208 -160.126,0 z"
@@ -120,7 +123,7 @@
   <g
      id="patch_6"
      style="stroke-linecap:butt;stroke-linejoin:round"
-     transform="translate(-109.339,-26.967556)">
+     transform="translate(-109.339,-4.2339774)">
     <path
        clip-path="url(#p68ad265ad8)"
        d="m 617.474,391.02 157.448,0 0,-272.783 -157.448,0 z"
@@ -131,7 +134,7 @@
   <g
      id="patch_7"
      style="stroke-linecap:butt;stroke-linejoin:round"
-     transform="translate(-109.339,-26.967556)">
+     transform="translate(-109.339,-4.2339774)">
     <path
        clip-path="url(#p68ad265ad8)"
        d="m 617.474,115.558 113.178,0 0,-26.4796 -113.178,0 z"
@@ -142,7 +145,7 @@
   <g
      id="patch_8"
      style="stroke-linecap:butt;stroke-linejoin:round"
-     transform="translate(-109.339,-26.967556)">
+     transform="translate(-109.339,-4.2339774)">
     <path
        clip-path="url(#p68ad265ad8)"
        d="m 733.33,115.558 37.824,0 0,-26.4796 -37.824,0 z"
@@ -153,7 +156,7 @@
   <g
      id="patch_9"
      style="stroke-linecap:butt;stroke-linejoin:round"
-     transform="translate(-109.339,-26.967556)">
+     transform="translate(-109.339,-4.2339774)">
     <path
        clip-path="url(#p68ad265ad8)"
        d="m 773.832,115.558 1.09,0 0,-26.4796 -1.09,0 z"
@@ -164,7 +167,7 @@
   <g
      id="patch_10"
      style="stroke-linecap:butt;stroke-linejoin:round"
-     transform="translate(-109.339,-26.967556)">
+     transform="translate(-109.339,-4.2339774)">
     <path
        clip-path="url(#p68ad265ad8)"
        d="m 110.678,364.446 234.884,0 0,-275.3676 -234.884,0 z"
@@ -175,7 +178,7 @@
   <g
      id="patch_11"
      style="stroke-linecap:butt;stroke-linejoin:round"
-     transform="translate(-109.339,-26.967556)">
+     transform="translate(-109.339,-4.2339774)">
     <path
        clip-path="url(#p68ad265ad8)"
        d="m 348.24,364.446 263.877,0 0,-174.994 -263.877,0 z"
@@ -186,7 +189,7 @@
   <g
      id="patch_12"
      style="stroke-linecap:butt;stroke-linejoin:round"
-     transform="translate(-109.339,-26.967556)">
+     transform="translate(-109.339,-4.2339774)">
     <path
        clip-path="url(#p68ad265ad8)"
        d="m 348.24,186.773 197.786,0 0,-97.6946 -197.786,0 z"
@@ -197,7 +200,7 @@
   <g
      id="patch_13"
      style="stroke-linecap:butt;stroke-linejoin:round"
-     transform="translate(-109.339,-26.967556)">
+     transform="translate(-109.339,-4.2339774)">
     <path
        clip-path="url(#p68ad265ad8)"
        d="m 548.704,186.773 63.413,0 0,-97.6946 -63.413,0 z"
@@ -222,192 +225,192 @@
      xml:space="preserve"
      style="font-size:19.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Webdings;-inkscape-font-specification:Webdings"
      x="202.0876"
-     y="544.46667"
+     y="567.20026"
      id="text4076"
      sodipodi:linespacing="125%"><tspan
        sodipodi:role="line"
        id="tspan4078"
        x="202.0876"
-       y="544.46667"
+       y="567.20026"
        style="font-size:22.39999962px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:TeX Gyre Adventor;-inkscape-font-specification:TeX Gyre Adventor">sensitivity </tspan><tspan
        sodipodi:role="line"
        x="202.0876"
-       y="572.46667"
+       y="595.20026"
        style="font-size:22.39999962px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:TeX Gyre Adventor;-inkscape-font-specification:TeX Gyre Adventor"
        id="tspan4122">analysis</tspan></text>
   <text
      xml:space="preserve"
      style="font-size:19.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Webdings;-inkscape-font-specification:Webdings"
      x="524.06256"
-     y="557.75366"
+     y="580.48724"
      id="text4076-4"
      sodipodi:linespacing="125%"><tspan
        sodipodi:role="line"
        id="tspan4078-6"
        x="524.06256"
-       y="557.75366"
+       y="580.48724"
        style="font-size:22.39999962px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:TeX Gyre Adventor;-inkscape-font-specification:TeX Gyre Adventor">uncertainty </tspan><tspan
        sodipodi:role="line"
        x="524.06256"
-       y="585.75366"
+       y="608.48724"
        style="font-size:22.39999962px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:TeX Gyre Adventor;-inkscape-font-specification:TeX Gyre Adventor"
        id="tspan4120">analysis</tspan></text>
   <text
      xml:space="preserve"
-     style="font-size:19.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Webdings;-inkscape-font-specification:Webdings"
-     x="538.32996"
-     y="239.53748"
+     style="font-size:25.83347893px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Webdings;-inkscape-font-specification:Webdings"
+     x="521.71606"
+     y="260.24341"
      id="text4076-4-4"
      sodipodi:linespacing="125%"><tspan
        sodipodi:role="line"
-       x="538.32996"
-       y="239.53748"
-       style="font-size:22.39999962px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:TeX Gyre Adventor;-inkscape-font-specification:TeX Gyre Adventor"
+       x="521.71606"
+       y="260.24341"
+       style="font-size:30.13905716px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:TeX Gyre Adventor;-inkscape-font-specification:TeX Gyre Adventor"
        id="tspan4120-8">model</tspan><tspan
        sodipodi:role="line"
-       x="538.32996"
-       y="267.53748"
-       style="font-size:22.39999962px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:TeX Gyre Adventor;-inkscape-font-specification:TeX Gyre Adventor"
+       x="521.71606"
+       y="297.91724"
+       style="font-size:30.13905716px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:TeX Gyre Adventor;-inkscape-font-specification:TeX Gyre Adventor"
        id="tspan4709">selection</tspan></text>
   <text
      xml:space="preserve"
      style="font-size:19.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Webdings;-inkscape-font-specification:Webdings"
      x="73.431267"
-     y="211.67117"
+     y="234.40475"
      id="text4076-4-4-0"
      sodipodi:linespacing="125%"><tspan
        sodipodi:role="line"
        x="73.431267"
-       y="211.67117"
+       y="234.40475"
        style="font-size:22.39999962px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:TeX Gyre Adventor;-inkscape-font-specification:TeX Gyre Adventor"
        id="tspan4709-2">parameter</tspan><tspan
        sodipodi:role="line"
        x="73.431267"
-       y="239.67117"
+       y="262.40475"
        style="font-size:22.39999962px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:TeX Gyre Adventor;-inkscape-font-specification:TeX Gyre Adventor"
        id="tspan4737">estimation</tspan></text>
   <text
      xml:space="preserve"
      style="font-size:19.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Webdings;-inkscape-font-specification:Webdings"
      x="325.87125"
-     y="241.26248"
+     y="263.99606"
      id="text4076-4-4-0-4"
      sodipodi:linespacing="125%"><tspan
        sodipodi:role="line"
        x="325.87125"
-       y="241.26248"
+       y="263.99606"
        style="font-size:22.39999962px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:TeX Gyre Adventor;-inkscape-font-specification:TeX Gyre Adventor"
        id="tspan4737-5">model</tspan><tspan
        sodipodi:role="line"
        x="325.87125"
-       y="269.26248"
+       y="291.99606"
        style="font-size:22.39999962px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:TeX Gyre Adventor;-inkscape-font-specification:TeX Gyre Adventor"
        id="tspan4765">calibration</tspan></text>
   <text
      xml:space="preserve"
      style="font-size:19.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Webdings;-inkscape-font-specification:Webdings"
      x="276.5206"
-     y="97.310966"
+     y="120.04455"
      id="text4076-4-4-0-4-0-9"
      sodipodi:linespacing="125%"><tspan
        sodipodi:role="line"
        x="276.5206"
-       y="97.310966"
+       y="120.04455"
        style="font-size:22.39999962px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:TeX Gyre Adventor;-inkscape-font-specification:TeX Gyre Adventor"
        id="tspan4793-8">inverse</tspan><tspan
        sodipodi:role="line"
        x="276.5206"
-       y="125.31097"
+       y="148.04454"
        style="font-size:22.39999962px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:TeX Gyre Adventor;-inkscape-font-specification:TeX Gyre Adventor"
        id="tspan4821">modelling</tspan></text>
   <text
      xml:space="preserve"
      style="font-size:12.00601959px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Webdings;-inkscape-font-specification:Webdings"
      x="374.93512"
-     y="21.002083"
+     y="43.735661"
      id="text4076-4-4-0-4-0-0"
      sodipodi:linespacing="125%"><tspan
        sodipodi:role="line"
        x="374.93512"
-       y="21.002083"
+       y="43.735661"
        style="font-size:14.39999962px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:TeX Gyre Adventor;-inkscape-font-specification:TeX Gyre Adventor"
        id="tspan4765-2-5">parameter</tspan><tspan
        sodipodi:role="line"
        x="374.93512"
-       y="39.002079"
+       y="61.735661"
        style="font-size:14.39999962px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:TeX Gyre Adventor;-inkscape-font-specification:TeX Gyre Adventor"
        id="tspan4793-9">optimization</tspan></text>
   <text
      xml:space="preserve"
-     style="font-size:19.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Webdings;-inkscape-font-specification:Webdings"
-     x="500.9057"
-     y="10.641598"
+     style="font-size:29.70470619px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Webdings;-inkscape-font-specification:Webdings"
+     x="479.35852"
+     y="16.463831"
      id="text4076-4-4-0-4-0-1"
      sodipodi:linespacing="125%"><tspan
        sodipodi:role="line"
-       x="500.9057"
-       y="10.641598"
-       style="font-size:14.39999962px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:TeX Gyre Adventor;-inkscape-font-specification:TeX Gyre Adventor"
+       x="479.35852"
+       y="16.463831"
+       style="font-size:22.27852821px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:TeX Gyre Adventor;-inkscape-font-specification:TeX Gyre Adventor"
        id="tspan4793-1">model </tspan><tspan
        sodipodi:role="line"
-       x="500.9057"
-       y="28.641598"
-       style="font-size:14.39999962px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:TeX Gyre Adventor;-inkscape-font-specification:TeX Gyre Adventor"
+       x="479.35852"
+       y="44.311989"
+       style="font-size:22.27852821px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:TeX Gyre Adventor;-inkscape-font-specification:TeX Gyre Adventor"
        id="tspan5162">identification</tspan></text>
   <text
      xml:space="preserve"
-     style="font-size:19.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Webdings;-inkscape-font-specification:Webdings"
-     x="691.36456"
-     y="66.815987"
+     style="font-size:31.40263367px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Webdings;-inkscape-font-specification:Webdings"
+     x="691.19983"
+     y="96.312874"
      id="text4076-4-4-0-4-0-96"
      sodipodi:linespacing="125%"><tspan
        sodipodi:role="line"
-       x="691.36456"
-       y="66.815987"
-       style="font-size:14.39999962px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:TeX Gyre Adventor;-inkscape-font-specification:TeX Gyre Adventor"
+       x="691.19983"
+       y="96.312874"
+       style="font-size:23.55197334px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:TeX Gyre Adventor;-inkscape-font-specification:TeX Gyre Adventor"
        id="tspan4793-3">structure</tspan><tspan
        sodipodi:role="line"
-       x="691.36456"
-       y="84.815987"
-       style="font-size:14.39999962px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:TeX Gyre Adventor;-inkscape-font-specification:TeX Gyre Adventor"
+       x="691.19983"
+       y="125.75284"
+       style="font-size:23.55197334px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:TeX Gyre Adventor;-inkscape-font-specification:TeX Gyre Adventor"
        id="tspan5158">characterisation</tspan></text>
   <text
      xml:space="preserve"
-     style="font-size:19.20000076px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Webdings;-inkscape-font-specification:Webdings"
-     x="627.73462"
-     y="14.999859"
+     style="font-size:29.70470619px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Webdings;-inkscape-font-specification:Webdings"
+     x="658.18823"
+     y="27.782854"
      id="text4076-4-4-0-4-0-1-0"
      sodipodi:linespacing="125%"><tspan
        sodipodi:role="line"
-       x="627.73462"
-       y="14.999859"
-       style="font-size:14.39999962px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:TeX Gyre Adventor;-inkscape-font-specification:TeX Gyre Adventor"
+       x="658.18823"
+       y="27.782854"
+       style="font-size:22.27852821px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:TeX Gyre Adventor;-inkscape-font-specification:TeX Gyre Adventor"
        id="tspan5162-0">model </tspan><tspan
        sodipodi:role="line"
-       x="627.73462"
-       y="32.999859"
-       style="font-size:14.39999962px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:TeX Gyre Adventor;-inkscape-font-specification:TeX Gyre Adventor"
+       x="658.18823"
+       y="55.631016"
+       style="font-size:22.27852821px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:TeX Gyre Adventor;-inkscape-font-specification:TeX Gyre Adventor"
        id="tspan5190">discrimination</tspan></text>
   <path
      style="fill:none;stroke:#000000;stroke-width:0.80000007px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-     d="M 472.86421,81.744664 451.45949,45.088287"
+     d="M 472.86421,104.47824 451.45949,67.821866"
      id="path5700"
      inkscape:connector-curvature="0" />
   <path
      style="fill:none;stroke:#000000;stroke-width:0.80000007px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-     d="m 565.20182,70.651884 5.14772,-38.92152"
+     d="m 565.20182,93.385463 5.14772,-38.92152"
      id="path5700-7"
      inkscape:connector-curvature="0"
      sodipodi:nodetypes="cc" />
   <path
      style="fill:none;stroke:#000000;stroke-width:0.80000007px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-     d="M 641.73114,75.991134 653.35068,36.746023"
+     d="M 641.73114,98.724713 653.35068,59.479602"
      id="path5700-7-6"
      inkscape:connector-curvature="0"
      sodipodi:nodetypes="cc" />
   <path
      style="fill:none;stroke:#000000;stroke-width:0.80000007px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-     d="M 664.99106,74.455854 686.6784,64.498878"
+     d="M 664.99106,97.189433 686.6784,87.232457"
      id="path5700-7-6-7"
      inkscape:connector-curvature="0"
      sodipodi:nodetypes="cc" />
